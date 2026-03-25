@@ -21,7 +21,7 @@
         }
       } else {
         if (dict[attrValue]) {
-          el.textContent = dict[attrValue];
+          el.innerHTML = dict[attrValue];
         }
       }
     });
