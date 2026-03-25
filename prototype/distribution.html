@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Distribution - Matcha Capital</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared/styles.css">
+  <script src="shared/translations.js"></script>
+  <script src="shared/i18n.js"></script>
+</head>
+<body id="prototype-body" class="role-internal">
+  <aside class="sidebar">
+    <div class="px-6 py-8 text-center border-b border-white/10">
+      <img src="shared/logo.png?v=3" alt="Matcha Capital" class="sidebar-logo mx-auto">
+      <p class="text-[10px] text-teal-300 mt-1 uppercase tracking-widest opacity-70">Internal View</p>
+    </div>
+    <nav class="mt-4">
+      <a href="index.html" class="text-xs opacity-50 mb-4 hover:opacity-100" data-i18n="nav_hub">← Back to Hub</a>
+      <a href="dashboard.html" data-i18n="nav_dashboard">Dashboard</a>
+      <a href="company-verify.html" data-i18n="nav_verify">Company Verify</a>
+      <a href="create-room.html" data-i18n="nav_initiate">Initiate Project</a>
+      <a href="upload-docs.html" data-i18n="nav_vault">Document Vault</a>
+      <a href="deal-pipeline.html" data-i18n="nav_pipeline">Deal Pipeline</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <header class="mb-8 flex justify-between items-end border-b border-slate-100 pb-8">
+      <div>
+        <div class="flex items-center gap-2 text-slate-400 text-sm mb-2 uppercase font-bold tracking-widest" data-i18n="dist_breadcrumb">
+            <span>Project Distribution</span> <span>›</span> <span class="text-teal-600 underline">Solar Cu M'gar</span>
+        </div>
+        <h1 class="text-3xl font-bold" data-i18n="dist_title">Project Issuance & Investor Invitation</h1>
+        <p class="text-slate-500" data-i18n="dist_subtitle">Configure visibility and connect with the appropriate Lender network.</p>
+      </div>
+      <button onclick="window.location.href='deal-pipeline.html'" class="btn btn-primary bg-[#0d7377] hover:bg-[#095c5f] px-10 py-3 shadow-xl shadow-teal-900/10" data-i18n="dist_btn_publish">SEND INVITATIONS & PUBLISH</button>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div class="space-y-8">
+        <!-- Issuance Mode -->
+        <div class="card p-8">
+          <h2 class="text-xs font-black text-teal-600 uppercase tracking-widest mb-6 flex items-center gap-2">
+            <span data-i18n="dist_sec_mode">1. ISSUANCE MODE</span>
+            <span class="h-px bg-teal-100 flex-grow"></span>
+          </h2>
+          <div class="space-y-4">
+            <label class="flex items-start gap-4 p-5 border rounded-2xl cursor-pointer hover:bg-teal-50 transition-all border-teal-500 bg-teal-50/50">
+              <input type="radio" name="visibility" checked class="mt-1 w-4 h-4 text-teal-600">
+              <div>
+                <p class="text-sm font-bold text-teal-900" data-i18n="dist_mode_private">Private</p>
+                <p class="text-xs text-teal-700 opacity-70" data-i18n="dist_mode_private_desc">Only invited parties can see the project and request access.</p>
+              </div>
+            </label>
+            <label class="flex items-start gap-4 p-5 border rounded-2xl cursor-pointer hover:bg-slate-50 transition-all border-slate-200">
+              <input type="radio" name="visibility" class="mt-1 w-4 h-4 text-teal-600">
+              <div>
+                <p class="text-sm font-bold text-slate-800" data-i18n="dist_mode_public">Marketplace</p>
+                <p class="text-xs text-slate-500" data-i18n="dist_mode_public_desc">List for the entire verified investor network on the platform.</p>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Additional Configuration -->
+        <div class="card p-8">
+          <h2 class="text-xs font-black text-teal-600 uppercase tracking-widest mb-6 flex items-center gap-2">
+            <span data-i18n="dist_sec_message">2. OUTGOING MESSAGE</span>
+            <span class="h-px bg-teal-100 flex-grow"></span>
+          </h2>
+          <textarea rows="5" class="w-full p-4 bg-slate-50 border border-slate-200 rounded-xl text-sm italic text-slate-600 outline-none focus:ring-2 focus:ring-teal-500" data-i18n="dist_message_default">Dear Partners, DRG is pleased to invite you to audit the Cu M'gar Rooftop Solar project. The dossier has been Blockchain-verified and is ready for access in the Data Room...</textarea>
+          <div class="grid grid-cols-2 gap-6 mt-6">
+            <div>
+              <label class="block text-[10px] font-bold text-slate-400 uppercase mb-2" data-i18n="dist_label_expiry">Room Expiry Date</label>
+              <input type="date" value="2026-04-23" class="w-full p-3 bg-slate-50 border border-slate-200 rounded-lg text-sm">
+            </div>
+            <div class="flex items-end pb-3">
+              <label class="flex items-center gap-2 cursor-pointer">
+                <input type="checkbox" checked class="w-4 h-4 text-teal-600 rounded">
+                <span class="text-xs font-bold text-slate-700" data-i18n="dist_label_nda">Require mandatory NDA signing</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lender Matching -->
+      <div class="card p-8 bg-slate-900 text-white border-none shadow-2xl">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="bg-teal-500/20 p-2 rounded-lg">
+            <svg class="w-6 h-6 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h2 class="text-xs font-black uppercase tracking-widest text-teal-400" data-i18n="dist_lender_matching">LENDER MATCHING (SUGGESTION SYSTEM)</h2>
+        </div>
+        
+        <p class="text-xs text-slate-400 mb-8" data-i18n="dist_match_desc">Based on deal type: <span class="text-white font-bold">GREEN FINANCE</span>, the system suggests suitable partners:</p>
+
+        <div class="space-y-4">
+          <div class="p-4 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-between group hover:border-teal-500/50 transition-all">
+            <div class="flex items-center gap-4">
+              <input type="checkbox" checked class="w-5 h-5 rounded-lg accent-teal-500">
+              <div>
+                <p class="text-sm font-bold">Bank A</p>
+                <p class="text-[10px] text-teal-400 uppercase font-black tracking-widest mt-0.5" data-i18n="dist_lender_a_tag">Renewable energy priority</p>
+              </div>
+            </div>
+            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-slate-400 font-bold group-hover:text-teal-400 transition-all" data-i18n="dist_lender_a_appetite">Appetite: Long-term loan</span>
+          </div>
+
+          <div class="p-4 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-between group hover:border-teal-500/50 transition-all">
+            <div class="flex items-center gap-4">
+              <input type="checkbox" checked class="w-5 h-5 rounded-lg accent-teal-500">
+              <div>
+                <p class="text-sm font-bold" data-i18n="vdr_lender_b">Green Investment Fund B</p>
+                <p class="text-[10px] text-teal-400 uppercase font-black tracking-widest mt-0.5" data-i18n="dist_lender_b_tag">ESG Specialist</p>
+              </div>
+            </div>
+            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-slate-400 font-bold group-hover:text-teal-400 transition-all" data-i18n="dist_lender_b_appetite">Appetite: Equity</span>
+          </div>
+
+          <div class="p-4 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-between opacity-50 group hover:opacity-100 transition-all">
+            <div class="flex items-center gap-4">
+              <input type="checkbox" class="w-5 h-5 rounded-lg accent-teal-500">
+              <div>
+                <p class="text-sm font-bold">Finance Co C</p>
+                <p class="text-[10px] text-slate-400 uppercase font-black tracking-widest mt-0.5" data-i18n="dist_lender_c_tag">Short-term credit</p>
+              </div>
+            </div>
+            <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-slate-400 font-bold" data-i18n="dist_lender_c_appetite">Appetite: Working capital</span>
+          </div>
+        </div>
+
+        <button class="w-full mt-10 py-4 border-2 border-dashed border-white/20 rounded-2xl text-xs font-bold text-slate-400 hover:border-teal-500/50 hover:text-white transition-all" data-i18n="dist_btn_add_lender">+ Add another Lender/Email...</button>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const role = localStorage.getItem('drg-role') || 'internal';
+    document.getElementById('prototype-body').className = 'role-' + role;
+  </script>
+</body>
+</html>

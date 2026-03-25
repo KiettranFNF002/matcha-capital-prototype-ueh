@@ -1,0 +1,55 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Wednesday, March 25, 2026 3:36:16 PM
+   Source : d:\Downloads\UX_UI_Design\prototype\
+     Dest : d:\Downloads\UX_UI_Design_EN_only\prototype\
+
+    Files : *.*
+	    
+  Options : *.* /V /S /E /DCOPY:DA /COPY:DAT /MT:32 /R:3 /W:5 
+
+------------------------------------------------------------------------------
+
+	  *EXTRA File 		       0	d:\Downloads\UX_UI_Design_EN_only\prototype\pricing.html
+	  *EXTRA File 		       0	d:\Downloads\UX_UI_Design_EN_only\prototype\recovery.log
+	          same		    3410	d:\Downloads\UX_UI_Design\prototype\PROTOTYPE_GUIDE.md
+	    Older     		    8601	d:\Downloads\UX_UI_Design\prototype\admin-dashboard.html100%  
+	    Older     		    5958	d:\Downloads\UX_UI_Design\prototype\audit-trail.html100%  
+	    Older     		   13702	d:\Downloads\UX_UI_Design\prototype\blockchain-ledger.html100%  
+	    Older     		    6978	d:\Downloads\UX_UI_Design\prototype\blockchain-monitor.html100%  
+	    Older     		    6971	d:\Downloads\UX_UI_Design\prototype\company-verify.html100%  
+	    Older     		   25155	d:\Downloads\UX_UI_Design\prototype\create-room.html100%  
+	    Older     		    5731	d:\Downloads\UX_UI_Design\prototype\dashboard.html100%  
+	    Older     		   11498	d:\Downloads\UX_UI_Design\prototype\deal-discovery.html100%  
+	    Older     		   10586	d:\Downloads\UX_UI_Design\prototype\deal-pipeline.html100%  
+	    Older     		    7103	d:\Downloads\UX_UI_Design\prototype\deal-room.html100%  
+	    Older     		    8785	d:\Downloads\UX_UI_Design\prototype\distribution.html100%  
+	    Older     		   10215	d:\Downloads\UX_UI_Design\prototype\index.html100%  
+	    Older     		    6316	d:\Downloads\UX_UI_Design\prototype\indicative-offer.html100%  
+	    Older     		    6116	d:\Downloads\UX_UI_Design\prototype\investor-profile.html100%  
+	    Older     		    8563	d:\Downloads\UX_UI_Design\prototype\lender-view.html100%  
+	    Older     		    6212	d:\Downloads\UX_UI_Design\prototype\login.html100%  
+	    Older     		    8550	d:\Downloads\UX_UI_Design\prototype\permission.html100%  
+	    Older     		   17450	d:\Downloads\UX_UI_Design\prototype\upload-docs.html100%  
+	    Older     		    8688	d:\Downloads\UX_UI_Design\prototype\verification-center.html100%  
+	    Older     		    3431	d:\Downloads\UX_UI_Design\prototype\shared\i18n.js100%  
+	    Older     		  966441	d:\Downloads\UX_UI_Design\prototype\shared\logo.png100%  
+	    Older     		    3277	d:\Downloads\UX_UI_Design\prototype\shared\styles.css100%  
+	    Older     		   26304	d:\Downloads\UX_UI_Design\prototype\shared\translations.js100%  
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         2         2         2         0         0         0
+   Files :        24        23         1         0         0         2
+   Bytes :    1.13 m    1.12 m     3.3 k         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+
+
+   Speed :           236,526,200 Bytes/sec.
+   Speed :            13,534.138 MegaBytes/min.
+   Ended : Wednesday, March 25, 2026 3:36:16 PM
+

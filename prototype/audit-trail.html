@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audit Trail - DRG Capital Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="shared/styles.css">
+  <script src="shared/translations.js"></script>
+  <script src="shared/i18n.js"></script>
+</head>
+<body id="prototype-body" class="role-admin">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="px-6 py-8 text-center border-b border-white/10">
+      <img src="shared/logo.png?v=3" alt="Matcha Capital" class="sidebar-logo mx-auto">
+      <p class="text-[10px] text-rose-300 mt-1 uppercase tracking-widest opacity-70">Audit / Admin View</p>
+    </div>
+    <nav class="mt-4">
+      <a href="index.html" class="text-xs opacity-50 mb-4 hover:opacity-100" data-i18n="nav_hub">← Back to Hub</a>
+      <a href="admin-dashboard.html" data-i18n="nav_admin_global">Global Dashboard</a>
+      <a href="blockchain-monitor.html" data-i18n="nav_integrity">Integrity Monitor</a>
+      <a href="audit-trail.html" class="active" data-i18n="nav_audit">Audit Trail</a>
+      <a href="blockchain-ledger.html" data-i18n="nav_ledger">Blockchain Ledger</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <header class="mb-8 flex justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-bold" data-i18n="audit_title">Audit & Activity Log</h1>
+        <p class="text-slate-500" data-i18n="audit_subtitle">Complete immutable record of all platform interactions and version history.</p>
+      </div>
+      <button class="btn btn-secondary">Export to CSV</button>
+    </header>
+
+    <!-- Filters -->
+    <div class="card mb-8 p-4 flex gap-4 bg-slate-50 border-slate-200">
+      <div class="flex flex-col gap-1 flex-1">
+        <label class="text-[10px] uppercase font-bold text-slate-400">Filter by Room</label>
+        <select class="p-2 border rounded bg-white text-sm"><option>All Rooms</option><option>Rubber WC Q1 2026</option></select>
+      </div>
+      <div class="flex flex-col gap-1 flex-1">
+        <label class="text-[10px] uppercase font-bold text-slate-400">Filter by User</label>
+        <input type="text" class="p-2 border rounded bg-white text-sm" placeholder="Name or ID">
+      </div>
+      <div class="flex flex-col gap-1 flex-1">
+        <label class="text-[10px] uppercase font-bold text-slate-400">Action Type</label>
+        <select class="p-2 border rounded bg-white text-sm"><option>All Actions</option><option>Upload</option><option>Access Request</option><option>Permission Change</option><option>Offer Submit</option></select>
+      </div>
+    </div>
+
+    <!-- Log Table -->
+    <div class="table-container shadow-sm">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="th_timestamp">Timestamp</th>
+            <th data-i18n="th_actor">User / Actor</th>
+            <th data-i18n="th_ip">IP Address</th>
+            <th data-i18n="th_action">Action</th>
+            <th data-i18n="th_bchain_ref">Blockchain Ref</th>
+            <th data-i18n="th_details">Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-xs font-mono">23/03/2026 14:30</td>
+            <td class="font-bold">Khue Ngo</td>
+            <td class="text-[10px] font-mono text-slate-400">14.161.x.x</td>
+            <td><span class="badge bg-emerald-100 text-emerald-800">UPLOAD</span></td>
+            <td class="font-mono text-[10px] text-teal-600 font-bold">#42892</td>
+            <td class="text-slate-500">Uploaded <code>EUDR_Cert_V3.pdf</code></td>
+          </tr>
+          <tr>
+            <td class="text-xs font-mono">23/03/2026 13:15</td>
+            <td class="font-bold">HSBC Vietnam</td>
+            <td class="text-[10px] font-mono text-slate-400">14.161.x.x</td>
+            <td><span class="badge bg-yellow-100 text-yellow-800">ACCESS_REQ</span></td>
+            <td>Capex Solar</td>
+            <td class="text-slate-500">Requested Full Access (Status: Pending)</td>
+          </tr>
+          <tr>
+            <td class="text-xs font-mono">22/03/2026 16:00</td>
+            <td class="font-bold">Admin (System)</td>
+            <td><span class="badge bg-slate-100 text-slate-800">PERMISSION</span></td>
+            <td>Green Finance</td>
+            <td class="text-slate-500">Dragon Capital: Partial → Full Access</td>
+          </tr>
+          <tr>
+            <td class="text-xs font-mono">22/03/2026 10:00</td>
+            <td class="font-bold">Vietcombank</td>
+            <td><span class="badge bg-green-100 text-green-800">OFFER_SUB</span></td>
+            <td>Rubber Working Capital</td>
+            <td class="text-slate-500">Offer: 12B VND, 8.2%, 12M</td>
+          </tr>
+          <tr>
+            <td class="text-xs font-mono">21/03/2026 11:20</td>
+            <td class="font-bold">Huong Dang</td>
+            <td><span class="badge bg-blue-100 text-blue-800">SYSTEM_MOD</span></td>
+            <td>N/A</td>
+            <td class="text-slate-500">Updated flow injection logic (Placeholder V2)</td>
+          </tr>
+          <tr>
+            <td class="text-xs font-mono">21/03/2026 09:30</td>
+            <td class="font-bold">System</td>
+            <td><span class="badge bg-slate-100 text-slate-800">CREATED</span></td>
+            <td>Trade Finance NS</td>
+            <td class="text-slate-500">Room auto-initialized from approved budget</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Map: Admin flow - Audit log + version history. Placeholder: log entries real-time -->
+  </main>
+
+  <script>
+    const role = localStorage.getItem('drg-role') || 'internal';
+    document.getElementById('prototype-body').className = 'role-' + role;
+  </script>
+</body>
+</html>

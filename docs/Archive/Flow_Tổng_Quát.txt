@@ -1,0 +1,42 @@
+
+1. DRG Internal Side (Bên đi vay)
+Nhóm này cần một công cụ để "đóng gói" các dự án nông nghiệp, cao su hoặc điện mặt trời thành các gói đầu tư minh bạch.
+User Flow
+1.	Dashboard: Xem tổng quan tình trạng các gói huy động vốn (Đang gọi, Đã đóng, Đã giải ngân).
+2.	Khởi tạo Case (Create Capital Case): Nhập thông tin cơ bản: số vốn cần, mục đích (Capex, Working Capital...), và thời gian hoàn vốn.
+3.	Thiết lập Data Room: Tải lên các bộ chứng từ tương ứng (Ví dụ: Dự án Solar cần giấy phép điện lực; Dự án cao su cần chứng chỉ EUDR).
+4.	Cấu trúc quyền truy cập: Thiết lập điều kiện cho Lender (Ví dụ: Chỉ cho phép tài khoản có số dư > 10 tỷ xem dữ liệu sâu).
+5.	Phát hành & Mời đầu tư: Gửi link Deal Room cho các bên cho vay mục tiêu hoặc công khai lên Marketplace.
+Danh sách màn hình & Mô tả
+●	Màn hình "Capital Case Management": Danh sách các deal đang thực hiện. Hiển thị nhanh các chỉ số sức khỏe như Debt Coverage hay EBITDA để CFO theo dõi trước khi gửi cho Lender.
+●	Màn hình "Project Initiation Wizard": Các bước hướng dẫn chọn loại hình vốn (Debt/Equity) và mục tiêu dự án (Cao su, Nông sản, Solar...).
+●	Màn hình "Secure Document Vault": Nơi quản lý file. Mỗi file khi upload sẽ được hệ thống tạo một "mã băm" (hash) lên Blockchain để đảm bảo tính bất biến.
+●	Màn hình "Permission Settings": Giao diện phân quyền theo Stage (Vòng sơ loại: Xem Teaser; Vòng thẩm định: Xem báo cáo tài chính chi tiết).
+________________________________________
+2. Lender / Investor Side (Bên cung cấp vốn)
+Nhóm này cần sự nhanh chóng trong việc thẩm định (Due Diligence) và tin tưởng vào dữ liệu.
+User Flow
+1.	Browse Marketplace: Xem danh sách các "Investment Teasers" (Chỉ hiện các chỉ số IRR, NPV, Payback cơ bản).
+2.	Xác thực danh tính (KYC) & Bank Link: Liên kết tài khoản ngân hàng để hệ thống tự động xác nhận năng lực tài chính.
+3.	Yêu cầu truy cập sâu (Request Access): Nhấn yêu cầu để xem các tài liệu nhạy cảm trong Data Room của DRG.
+4.	Phân tích & Thẩm định: Xem trực tiếp các file đã được xác thực, đặt câu hỏi làm rõ (Q&A) nếu cần.
+5.	Gửi Indicative Terms: Điền các thông số đề xuất như lãi suất, kỳ hạn, và các điều khoản ràng buộc (covenants).
+Danh sách màn hình & Mô tả
+●	Màn hình "Deal Discovery": Giao diện dạng thẻ (cards) hiển thị các cơ hội đầu tư, phân loại theo rủi ro và loại hình (ví dụ: "Deal xanh/Solar" hoặc "Tài trợ xuất khẩu").
+●	Màn hình "Verification Center": Nơi Lender thực hiện kết nối API ngân hàng để lấy "Verified Balance".
+●	Màn hình "Deal Room Interface": Giao diện đọc tài liệu trực tuyến, có tích hợp trình xem lịch sử phiên bản (Version history) để biết tài liệu có bị cập nhật hay không.
+●	Màn hình "Indicative Offer Form": Form mẫu để Lender nhập nhanh các điều kiện cho vay/đầu tư.
+________________________________________
+3. Audit / Admin Side (Bên vận hành nền tảng)
+Đảm bảo hệ thống hoạt động minh bạch, đúng luật và an toàn dữ liệu.
+User Flow
+1.	Giám sát hoạt động: Theo dõi lưu lượng truy cập và các giao dịch đang diễn ra trên nền tảng.
+2.	Kiểm tra tính toàn vẹn (Audit Check): Đối chiếu mã băm trên Blockchain với tài liệu thực tế để đảm bảo không có gian lận.
+3.	Quản lý trạng thái Room: Phê duyệt việc đóng/mở các Capital Room khi có dấu hiệu bất thường hoặc theo yêu cầu pháp lý.
+4.	Báo cáo hệ thống: Xuất dữ liệu về tỷ lệ thành công (Success rate), thời gian thẩm định trung bình để tối ưu platform.
+Danh sách màn hình & Mô tả
+●	Màn hình "System Audit Logs": Ghi lại mọi dấu vết (Audit trail): Ai đã xem tài liệu nào, vào lúc nào, từ địa chỉ IP nào.
+●	Màn hình "Blockchain Integrity Monitor": Hiển thị trạng thái các khối (blocks) chứa dữ liệu của DRG, xác nhận tính "sạch" của dữ liệu.
+●	Màn hình "Deal Pipeline Tracker": Quản lý vòng đời của từng dự án từ lúc "Draft" cho đến khi "Funded" hoặc "Closed".
+
+

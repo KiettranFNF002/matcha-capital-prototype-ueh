@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:30,000
+nhắm tới i s thù i quân thì cái đó nó sẽ có một cái phần vốn vay với phần tâm trạng riêng gọi là vốn xanh rồi để làm cái gì xử lý rắc lần nào thế là những nhà công ty nhà máy nói riêng nói chung ngoài ta ru cô nó đều có những cái chính luật i s thù i quân của nó nhưng mà tụi em muốn thắc mắc hỏi dự án i s thì với dự án bên ngoài tại vì ví dụ như là i méc đi lượt khi thấy tự tế nó có một cái vốn vốn xanh riêng gọi là viên rượu.
+
+2
+00:00:30,000 --> 00:00:38,000
+không luôn thì nó sẽ ảnh hưởng riêng và nhạy cảm nó và nó sẽ sẽ đổ phục vào mục bốn chín mươi tập trung.
+
+3
+00:01:00,000 --> 00:01:30,000
+câu bất luận của nó là ki ki em đang đi phai đó là mờ chơ ri ti mít mát thì mức thấp thanh khoản lý do vì sao nó bị áp chất thanh khoản đó là về giá của cả thị trường sụt giảm thì đó là bị động của cả ngành đúng không ạ mình làm gì cũng hết bất cứ chính xác và vậy thì bây giờ nó còn nó còn hướng đầu tư nữa nha cô tại vì cô đang chưa hiểu cái câu sự bất cân của mình.
+
+4
+00:01:30,000 --> 00:02:00,000
+đối xứng thông tin về hoạt động sản xuất khiến ngân hàng e ngại trong bốn dài hạn lẫn nhiều........................................................................................thế là một bên biết quá nhiều một bên biết quá ít thì làm mất ứng xét thông tin ngay doanh nghiệp có thông tin mà hóng báo cho ngân hàng nhiều mấy...
+
+5
+00:02:00,000 --> 00:02:00,939
+bất hân sướng là một bên nó biết nhiều bên biết ít đúng không doanh nghiệp nó biết nhưng mà nó không nói ngân hàng ngân hàng bị mời quá nó không cho vay thì đó mới là ý nghĩa của câu đó nếu không có thì bỏ đi chứ để vồ chi bị nhớ thành một cái mệnh bất đồng của em xong rồi cuối cùng em bị xử lý cho nó nè abi gây quay là cái gì abi mà còn nối thẳng dữ liệu từ nông trường vào kho banking là vào hẳn.
+
+6
+00:02:30,000 --> 00:03:00,000
+ngân hàng em tưởng ngân hàng nó cho em nối chắc ví dụ như nếu ngân hàng nó nói rằng chúng tôi cần những thông tin này của doanh nghiệp kết nối từ nông trường vào thì tức là cái ngân hàng nó cần thì lúc này em mới xây dựng a bi ai mà kết nối từ cái đó và cho ngân hàng đến ngân hàng nó theo dõi rồi phải cấp vốn cho em còn này ngân hàng nó cần đâu em tại em đâu có đưa thông tin gì cho ngân hàng nó đâu cần cái này là để theo bộ về cái item của em đi theo đội đường đẹp đặc.
+
+7
+00:03:00,000 --> 00:03:30,000
+cùng cụ thể dục kiểu này được chỉ khai bổ thành nhiều cái có cụ thể lỏng lỏng gờm ngoài bốn xanh thì bạn dùng cái derivative được để ổn định giá cho nó bảo đảm được giá cho nó cái thứ hai là cái abe integration bỏ đi cũng không thấy phù hợp cái abe nó cần phải có sự kết nối giữa hai bên một là doanh nghiệp và hai là chính xác đó là nó là những cái khóa cho hai cái máy nói chuyện với nhau.
+
+8
+00:03:30,000 --> 00:04:00,000
+ngân hàng đó không cho em nói chuyện thôi cái máy ngân hàng đó không mở cho em làm những thứ muốn tích hợp đó cũng thế mà ngân hàng đó cũng không có nhu cầu để nó tích hợp với em làm cái gì hết á tự nhiên bây giờ tích hợp xong ngồi đây phân tích cái đống dữ liệu của em làm cái gì trong khi cái đó là vai trò của doanh nghiệp mẹ ngồi đây mẹ làm mẹ phân tích đây mẹ muốn cái gì mẹ đến ngân hàng đây đúng không cho nên cái a bi ai in tơ rây sừn đó có ý nghĩa trong cái cái cái cái cái cái dự án của em mới đó em lái a bi ai in tơ rây sừn để em làm bi liêu đưa tin thì đâu đó con nghe
+
+9
+00:04:00,000 --> 00:04:00,900
+chứ còn nếu cho cái này mà tích hợp vào kho băng kim thì cô thấy nó hợp lý gì nếu tụi em thấy phân tích được cái hợp lý này thì tụi em cần phải xem thêm nữa làm như thế nào thì như thế nào em sẽ ở trong cái phần startup như thế nào startup ở trong cái cái không em chỉ cần nói thôi cái bài sốt loại của em muốn làm cái gì và cái cái cái thiết kế cái brown thai của em thì nó sẽ như thế nào thôi rồi phía trong đó là những cái thuật toán em có cái a bi ai trong đó rồi cái gì đó trong đó kể lại.
+
+10
+00:04:30,000 --> 00:04:50,579
+thì em chỉ cần em nói thôi và cơ chế nào của nó giúp cho cái tính ăn nào của em là xong thì thôi em nghĩ là em sẽ toàn bộ là nói miệng thôi nhất nhất là em phải hiểu và nói phải hiểu về cái men bros làm em nhận biết cái gì chứ chứ em ngổn liệt kê em đóng công nghệ này mồ tây rượt mắt lưới ai ai smith minh tường này không chỉ biết để làm gì hết.
+
