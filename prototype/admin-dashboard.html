@@ -14,16 +14,43 @@
   <aside class="sidebar">
     <div class="px-6 py-8 text-center border-b border-white/10">
       <img src="shared/logo.png?v=3" alt="Matcha Capital" class="sidebar-logo mx-auto">
-      <p class="text-[10px] text-rose-300 mt-1 uppercase tracking-widest opacity-70" data-i18n="role_admin">Admin View</p>
+      <p class="text-[10px] text-teal-400 mt-1 uppercase tracking-widest opacity-70">Unified View</p>
     </div>
-    <nav class="mt-4">
-      <a href="index.html" class="text-xs opacity-50 mb-4 hover:opacity-100" data-i18n="nav_hub">← Back to Hub</a>
-      <a href="admin-dashboard.html" class="active" data-i18n="nav_admin_global">Global Dashboard</a>
-      <a href="blockchain-monitor.html" data-i18n="nav_integrity">Integrity Monitor</a>
-      <a href="audit-trail.html" data-i18n="nav_audit">Audit Trail</a>
-      <a href="blockchain-ledger.html" data-i18n="nav_ledger">Blockchain Ledger</a>
+    <nav class="mt-4 space-y-4 pb-12">
+      <div class="px-6 mb-4">
+        <a href="index.html" class="text-[10px] font-bold opacity-50 hover:opacity-100 transition-all uppercase tracking-widest" data-i18n="nav_hub">← Back to Hub</a>
+      </div>
+      
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Internal View</p>
+        <a href="dashboard.html"  data-i18n="nav_dashboard">Dashboard</a>
+        <a href="company-verify.html"  data-i18n="nav_verify">Company Verify</a>
+        <a href="create-room.html"  data-i18n="nav_initiate">Initiate Project</a>
+        <a href="upload-docs.html"  data-i18n="nav_vault">Document Vault</a>
+        <a href="distribution.html"  data-i18n="nav_distribution">Distribution</a>
+        <a href="deal-pipeline.html"  data-i18n="nav_pipeline">Deal Pipeline</a>
+        <a href="permission.html"  data-i18n="nav_permission">Permissions</a>
+      </div>
+
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Lender View</p>
+        <a href="deal-discovery.html"  data-i18n="nav_marketplace">Marketplace</a>
+        <a href="investor-profile.html"  data-i18n="nav_profile">Investor Profile</a>
+        <a href="verification-center.html"  data-i18n="nav_verification">Verification Center</a>
+        <a href="deal-room.html"  data-i18n="nav_vault_lender">Deal Room</a>
+        <a href="lender-view.html"  data-i18n="nav_my_deals">My Deals</a>
+        <a href="indicative-offer.html"  data-i18n="nav_indicative">Indicative Offer</a>
+      </div>
+
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Admin View</p>
+        <a href="admin-dashboard.html" class="active" data-i18n="nav_admin_global">Admin Dashboard</a>
+        <a href="blockchain-monitor.html"  data-i18n="nav_integrity">Integrity Monitor</a>
+        <a href="audit-trail.html"  data-i18n="nav_audit">Audit Trail</a>
+        <a href="blockchain-ledger.html"  data-i18n="nav_ledger">Blockchain Ledger</a>
+      </div>
     </nav>
-  </aside>
+</aside>
 
   <main class="main-content">
     <header class="mb-10 flex justify-between items-center">
@@ -46,7 +73,7 @@
       </div>
       <div class="card bg-white p-6 ">
         <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1" data-i18n="stat_total_capital">Total Capital Raised</p>
-        <p class="text-3xl font-black text-teal-600" data-i18n="val_1250b">VND 1,250B</p>
+        <p class="text-3xl font-black text-teal-600" data-i18n="val_1250b"><u>đ</u> 1,250B</p>
         <p class="text-[10px] text-slate-400 mt-2" data-i18n="stat_cumulative_label">(Cumulative)</p>
       </div>
       <div class="card bg-white p-6 ">

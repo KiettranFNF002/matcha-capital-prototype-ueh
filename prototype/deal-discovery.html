@@ -14,18 +14,43 @@
   <aside class="sidebar">
     <div class="px-6 py-8 text-center border-b border-white/10">
       <img src="shared/logo.png?v=3" alt="Matcha Capital" class="sidebar-logo mx-auto">
-      <p class="text-[10px] text-emerald-300 mt-1 uppercase tracking-widest opacity-70" data-i18n="role_lender">Lender View</p>
+      <p class="text-[10px] text-teal-400 mt-1 uppercase tracking-widest opacity-70">Unified View</p>
     </div>
-    <nav class="mt-4">
-      <a href="index.html" class="text-xs opacity-50 mb-4 hover:opacity-100" data-i18n="nav_hub">← Back to Hub</a>
-      <a href="deal-discovery.html" class="active" data-i18n="nav_marketplace">Browse Marketplace</a>
-      <a href="investor-profile.html" data-i18n="nav_profile">Investor Profile</a>
-      <a href="verification-center.html" data-i18n="nav_verification">Verification Center</a>
-      <a href="deal-room.html" data-i18n="nav_vault">Deal Room</a>
-      <a href="lender-view.html" data-i18n="nav_my_deals">My Deals</a>
-      <a href="indicative-offer.html" data-i18n="nav_indicative">Indicative Offer</a>
+    <nav class="mt-4 space-y-4 pb-12">
+      <div class="px-6 mb-4">
+        <a href="index.html" class="text-[10px] font-bold opacity-50 hover:opacity-100 transition-all uppercase tracking-widest" data-i18n="nav_hub">← Back to Hub</a>
+      </div>
+      
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Internal View</p>
+        <a href="dashboard.html"  data-i18n="nav_dashboard">Dashboard</a>
+        <a href="company-verify.html"  data-i18n="nav_verify">Company Verify</a>
+        <a href="create-room.html"  data-i18n="nav_initiate">Initiate Project</a>
+        <a href="upload-docs.html"  data-i18n="nav_vault">Document Vault</a>
+        <a href="distribution.html"  data-i18n="nav_distribution">Distribution</a>
+        <a href="deal-pipeline.html"  data-i18n="nav_pipeline">Deal Pipeline</a>
+        <a href="permission.html"  data-i18n="nav_permission">Permissions</a>
+      </div>
+
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Lender View</p>
+        <a href="deal-discovery.html" class="active" data-i18n="nav_marketplace">Marketplace</a>
+        <a href="investor-profile.html"  data-i18n="nav_profile">Investor Profile</a>
+        <a href="verification-center.html"  data-i18n="nav_verification">Verification Center</a>
+        <a href="deal-room.html"  data-i18n="nav_vault_lender">Deal Room</a>
+        <a href="lender-view.html"  data-i18n="nav_my_deals">My Deals</a>
+        <a href="indicative-offer.html"  data-i18n="nav_indicative">Indicative Offer</a>
+      </div>
+
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Admin View</p>
+        <a href="admin-dashboard.html"  data-i18n="nav_admin_global">Admin Dashboard</a>
+        <a href="blockchain-monitor.html"  data-i18n="nav_integrity">Integrity Monitor</a>
+        <a href="audit-trail.html"  data-i18n="nav_audit">Audit Trail</a>
+        <a href="blockchain-ledger.html"  data-i18n="nav_ledger">Blockchain Ledger</a>
+      </div>
     </nav>
-  </aside>
+</aside>
 
   <main class="main-content">
     <header class="mb-8 flex justify-between items-center bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
@@ -155,7 +180,7 @@
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.027a6.012 6.012 0 011.912-2.706C6.512 5.73 6.974 6 7.5 6A1.5 1.5 0 019 7.5V8a2 2 0 004 0 2 2 0 011.523-1.943A5.977 5.977 0 0116 10c0 .341-.029.675-.084 1H15a2 2 0 00-2 2v.5a2 2 0 01-2 2v.5c0 1.105-.895 2-2 2l-1.414.014A6.023 6.023 0 014 10c0-1.107.202-2.166.572-3.14a1.99 1.99 0 00-.24.167z" clip-rule="evenodd"></path></svg>
           </div>
           <div>
-            <span class="text-[9px] font-black text-amber-600 uppercase tracking-widest" data-i18n="market_badge_cross">🌍 CROSS-BORDER</span>
+            <span class="text-[9px] font-black text-amber-600 uppercase tracking-widest" data-i18n="market_badge_cross"> CROSS-BORDER</span>
             <h3 class="font-bold text-[#0a2e2f]" data-i18n="market_proj_cam_title">CAMBODIA PROJECT</h3>
             <p class="text-[10px] text-slate-400" data-i18n="market_proj_cam_desc">Mode: Project Finance | Target: PE Funds</p>
           </div>

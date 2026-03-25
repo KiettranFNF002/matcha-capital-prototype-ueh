@@ -21,19 +21,43 @@
   <aside class="sidebar">
     <div class="px-6 py-8 text-center border-b border-white/10">
       <img src="shared/logo.png?v=3" alt="Matcha Capital" class="sidebar-logo mx-auto">
-      <p class="text-[10px] text-teal-300 mt-1 uppercase tracking-widest opacity-70">Internal View</p>
+      <p class="text-[10px] text-teal-400 mt-1 uppercase tracking-widest opacity-70">Unified View</p>
     </div>
-    <nav class="mt-4">
-      <a href="index.html" class="text-xs opacity-50 mb-4 hover:opacity-100" data-i18n="nav_hub">← Back to Hub</a>
-      <a href="dashboard.html" data-i18n="nav_dashboard">Dashboard</a>
-      <a href="company-verify.html" data-i18n="nav_verify">Company Verify</a>
-      <a href="create-room.html" class="active" data-i18n="nav_initiate">Initiate Project</a>
-      <a href="upload-docs.html" data-i18n="nav_vault">Document Vault</a>
-      <a href="distribution.html" data-i18n="nav_distribution">Distribution</a>
-      <a href="deal-pipeline.html" data-i18n="nav_pipeline">Deal Pipeline</a>
-      <a href="permission.html" data-i18n="nav_permission">Permissions</a>
+    <nav class="mt-4 space-y-4 pb-12">
+      <div class="px-6 mb-4">
+        <a href="index.html" class="text-[10px] font-bold opacity-50 hover:opacity-100 transition-all uppercase tracking-widest" data-i18n="nav_hub">← Back to Hub</a>
+      </div>
+      
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Internal View</p>
+        <a href="dashboard.html"  data-i18n="nav_dashboard">Dashboard</a>
+        <a href="company-verify.html"  data-i18n="nav_verify">Company Verify</a>
+        <a href="create-room.html" class="active" data-i18n="nav_initiate">Initiate Project</a>
+        <a href="upload-docs.html"  data-i18n="nav_vault">Document Vault</a>
+        <a href="distribution.html"  data-i18n="nav_distribution">Distribution</a>
+        <a href="deal-pipeline.html"  data-i18n="nav_pipeline">Deal Pipeline</a>
+        <a href="permission.html"  data-i18n="nav_permission">Permissions</a>
+      </div>
+
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Lender View</p>
+        <a href="deal-discovery.html"  data-i18n="nav_marketplace">Marketplace</a>
+        <a href="investor-profile.html"  data-i18n="nav_profile">Investor Profile</a>
+        <a href="verification-center.html"  data-i18n="nav_verification">Verification Center</a>
+        <a href="deal-room.html"  data-i18n="nav_vault_lender">Deal Room</a>
+        <a href="lender-view.html"  data-i18n="nav_my_deals">My Deals</a>
+        <a href="indicative-offer.html"  data-i18n="nav_indicative">Indicative Offer</a>
+      </div>
+
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Admin View</p>
+        <a href="admin-dashboard.html"  data-i18n="nav_admin_global">Admin Dashboard</a>
+        <a href="blockchain-monitor.html"  data-i18n="nav_integrity">Integrity Monitor</a>
+        <a href="audit-trail.html"  data-i18n="nav_audit">Audit Trail</a>
+        <a href="blockchain-ledger.html"  data-i18n="nav_ledger">Blockchain Ledger</a>
+      </div>
     </nav>
-  </aside>
+</aside>
 
   <main class="main-content">
     <header class="mb-8 flex justify-between items-end">
@@ -81,19 +105,19 @@
           <div>
             <label class="block text-xs font-bold text-slate-400 uppercase mb-4" data-i18n="label_capital_type">Capital Structure Type</label>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer hover:bg-teal-50 transition-all border-teal-500 bg-teal-50/50">
+              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer transition-all">
                 <input type="radio" name="case-type" checked class="w-4 h-4 text-teal-600">
                 <span class="text-sm font-bold" data-i18n="type_green">Green Finance (Solar/ESG)</span>
               </label>
-              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer hover:bg-slate-50 transition-all">
+              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer transition-all">
                 <input type="radio" name="case-type" class="w-4 h-4 text-teal-600">
                 <span class="text-sm font-bold" data-i18n="type_wc">Working Capital (Rubber)</span>
               </label>
-              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer hover:bg-slate-50 transition-all">
+              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer transition-all">
                 <input type="radio" name="case-type" class="w-4 h-4 text-teal-600">
                 <span class="text-sm font-bold" data-i18n="wizard_type_trade">Trade Finance (Agri)</span>
               </label>
-              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer hover:bg-slate-50 transition-all">
+              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer transition-all">
                 <input type="radio" name="case-type" class="w-4 h-4 text-teal-600">
                 <span class="text-sm font-bold" data-i18n="wizard_type_invest">Investment Capital (Plant/Machinery)</span>
               </label>
@@ -117,6 +141,10 @@
             <label class="block text-xs font-bold text-slate-400 uppercase mb-4" data-i18n="wizard_purpose_label">Purpose of Funds</label>
             <textarea id="target-desc" rows="3" class="w-full p-4 border rounded-xl bg-slate-50 outline-none focus:ring-2 focus:ring-teal-500 text-sm" placeholder="Purpose of using capital, expected benefits for the business..." data-i18n="[placeholder]wizard_purpose_placeholder"></textarea>
           </div>
+        </div>
+      </div>
+    </div>
+ 
            <!-- ===== STEP 2 ===== -->
     <div id="step-2" class="step-content hidden">
       <div class="card p-8">
@@ -135,11 +163,11 @@
           <div>
             <label class="block text-xs font-bold text-slate-400 uppercase mb-4" data-i18n="wizard_uof_label">Use of Funds Structure</label>
             <div class="grid grid-cols-2 gap-4">
-              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer hover:bg-teal-50">
+              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer">
                 <input type="checkbox" class="w-4 h-4 text-teal-600 rounded"> <span class="text-sm font-bold" data-i18n="wizard_uof_machinery">Machinery Procurement</span>
               </label>
-              <label class="flex items-center gap-3 p-4 border rounded-lg border-teal-500 bg-teal-50 cursor-pointer">
-                <input type="checkbox" checked class="w-4 h-4 text-teal-600 rounded"> <span class="text-sm font-bold text-teal-800" data-i18n="wizard_uof_solar">Solar Panels Installation</span>
+              <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer">
+                <input type="checkbox" checked class="w-4 h-4 text-teal-600 rounded"> <span class="text-sm font-bold" data-i18n="wizard_uof_solar">Solar Panels Installation</span>
               </label>
               <label class="flex items-center gap-3 p-4 border rounded-lg cursor-pointer hover:bg-teal-50">
                 <input type="checkbox" class="w-4 h-4 text-teal-600 rounded"> <span class="text-sm font-bold" data-i18n="wizard_uof_construction">Site Construction</span>
@@ -191,7 +219,7 @@
                 <p class="text-2xl font-black text-teal-600">15.5%</p>
               </div>
               <div class="p-4 bg-slate-50 rounded-xl border">
-                <p class="text-[10px] text-slate-400 font-bold uppercase mb-1">NPV (Billion VND)</p>
+                <p class="text-[10px] text-slate-400 font-bold uppercase mb-1">NPV (Billion <u>đ</u>)</p>
                 <p class="text-2xl font-black text-[#0a2e2f]">48.2</p>
               </div>
               <div class="p-4 bg-slate-50 rounded-xl border">
@@ -263,7 +291,7 @@
           <div class="grid grid-cols-2 gap-x-8 gap-y-3 text-sm">
             <div><p class="text-[10px] text-slate-400" data-i18n="wizard_summary_name">Project Name</p><p class="font-bold">Solar Cu M'gar 2026</p></div>
             <div><p class="text-[10px] text-slate-400" data-i18n="wizard_summary_type">Type</p><p class="font-bold">Green Finance (Solar/ESG)</p></div>
-            <div><p class="text-[10px] text-slate-400" data-i18n="wizard_summary_amount">Total Ask</p><p class="font-bold text-teal-600">125,000,000,000 VND</p></div>
+            <div><p class="text-[10px] text-slate-400" data-i18n="wizard_summary_amount">Total Ask</p><p class="font-bold text-teal-600">125,000,000,000 <u>đ</u></p></div>
             <div><p class="text-[10px] text-slate-400" data-i18n="wizard_summary_method">Method</p><p class="font-bold">Debt</p></div>
             <div><p class="text-[10px] text-slate-400" data-i18n="wizard_summary_irr">Expected IRR</p><p class="font-bold">15.5%</p></div>
             <div><p class="text-[10px] text-slate-400" data-i18n="wizard_summary_tenor">Tenor</p><p class="font-bold">5 Years (6m Grace)</p></div>
@@ -274,11 +302,13 @@
         <div id="hash-zone" class="rounded-2xl border-2 border-dashed border-slate-200 p-8 text-center transition-all">
           <!-- Pre-submit -->
           <div id="pre-submit">
-            <p class="text-4xl mb-4">⛓️</p>
+            <div class="mb-4">
+              <svg class="w-12 h-12 mx-auto text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
             <p class="font-bold text-slate-600 mb-2" data-i18n="wizard_pre_submit_title">Ready for Blockchain Registration</p>
             <p class="text-sm text-slate-400 mb-6" data-i18n="wizard_pre_submit_desc">Click below to digitally sign and create an immutable Block on Matcha Capital chain.</p>
-            <button id="submit-btn" onclick="simulateHash()" class="btn btn-primary bg-[#0d7377] px-12 py-4 text-base font-black hover:bg-[#095c5f] transition-all" data-i18n="btn_submit_blockchain">
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg> REGISTER ON BLOCKCHAIN
+            <button id="submit-btn" onclick="simulateHash()" class="btn btn-primary px-12 py-4 text-base font-black transition-all" data-i18n="btn_submit_blockchain">
+              REGISTER ON BLOCKCHAIN
             </button>
           </div>
           <!-- Hashing animation -->

@@ -1,16 +1,16 @@
 /* Lo-fi Design System for DRG Prototype */
 
 :root {
-  --primary: #0d7377;
-  /* Matcha Teal */
-  --primary-hover: #095c5f;
-  --bg-main: #f0f4f4;
-  /* Slightly teal-tinted background */
+  --primary: #0a2d2f;
+  /* Matcha Deep Green */
+  --primary-hover: #082426;
+  --bg-main: #f8fafc;
+  /* Very light slate background */
   --bg-card: #ffffff;
   --text-main: #0a2d2f;
   /*Deep dark green for text*/
-  --text-muted: #5a7a7a;
-  --border: #d1dbdb;
+  --text-muted: #64748b;
+  --border: #e2e8f0;
 
   /* Status Colors */
   --status-active-bg: #dcfce7;
@@ -40,9 +40,23 @@ body {
 .card {
   background: var(--bg-card);
   border: 1px solid var(--border);
-  border-radius: 0.5rem;
+  border-radius: 0.75rem;
   padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Automated Highlighting for Inputs */
+label:has(input[type="radio"]:checked),
+label:has(input[type="checkbox"]:checked) {
+  background-color: #f0fdfa !important;
+  border-color: #0d7377 !important;
+  box-shadow: 0 0 0 1px #0d7377;
+}
+
+label:has(input[type="radio"]:checked) span,
+label:has(input[type="checkbox"]:checked) span {
+  color: #0d7377 !important;
 }
 
 .btn {
@@ -83,20 +97,30 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  border-right: 1px solid rgba(255,255,255,0.05);
+  z-index: 50;
 }
 
 .sidebar a {
   display: block;
   padding: 0.75rem 1.5rem;
-  color: #cbd5e1;
+  color: #94a3b8;
   text-decoration: none;
-  transition: background 0.2s;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
 }
 
-.sidebar a:hover,
-.sidebar a.active {
-  background: #334155;
+.sidebar a:hover {
+  background: rgba(255,255,255,0.05);
   color: white;
+}
+
+.sidebar a.active {
+  background: #0d7377;
+  color: white;
+  border-left-color: #ced;
 }
 
 .main-content {

@@ -11,106 +11,102 @@
   <script src="shared/i18n.js"></script>
 </head>
 <body id="prototype-body" class="role-lender bg-[#f8fafc]">
-  <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
-    <a href="index.html" class="flex items-center gap-2 text-[#0d7377] font-bold hover:opacity-80 transition-all">
-      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
-      <span data-i18n="nav_back_hub">Back to Platform Hub</span>
-    </a>
-    <img src="shared/logo.png?v=3" alt="Matcha Capital" class="h-10">
-  </nav>
+  <aside class="sidebar">
+    <div class="px-6 py-8 text-center border-b border-white/10">
+      <img src="shared/logo.png?v=3" alt="Matcha Capital" class="sidebar-logo mx-auto">
+      <p class="text-[10px] text-teal-400 mt-1 uppercase tracking-widest opacity-70">Unified View</p>
+    </div>
+    <nav class="mt-4 space-y-4 pb-12">
+      <div class="px-6 mb-4">
+        <a href="index.html" class="text-[10px] font-bold opacity-50 hover:opacity-100 transition-all uppercase tracking-widest" data-i18n="nav_hub">← Back to Hub</a>
+      </div>
+      
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Internal View</p>
+        <a href="dashboard.html"  data-i18n="nav_dashboard">Dashboard</a>
+        <a href="company-verify.html"  data-i18n="nav_verify">Company Verify</a>
+        <a href="create-room.html"  data-i18n="nav_initiate">Initiate Project</a>
+        <a href="upload-docs.html"  data-i18n="nav_vault">Document Vault</a>
+        <a href="distribution.html"  data-i18n="nav_distribution">Distribution</a>
+        <a href="deal-pipeline.html"  data-i18n="nav_pipeline">Deal Pipeline</a>
+        <a href="permission.html"  data-i18n="nav_permission">Permissions</a>
+      </div>
 
-  <main class="max-w-5xl mx-auto px-6 py-12 animate-fade-in">
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Lender View</p>
+        <a href="deal-discovery.html"  data-i18n="nav_marketplace">Marketplace</a>
+        <a href="investor-profile.html"  data-i18n="nav_profile">Investor Profile</a>
+        <a href="verification-center.html"  data-i18n="nav_verification">Verification Center</a>
+        <a href="deal-room.html"  data-i18n="nav_vault_lender">Deal Room</a>
+        <a href="lender-view.html"  data-i18n="nav_my_deals">My Deals</a>
+        <a href="indicative-offer.html"  data-i18n="nav_indicative">Indicative Offer</a>
+      </div>
+
+      <div>
+        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Admin View</p>
+        <a href="admin-dashboard.html"  data-i18n="nav_admin_global">Admin Dashboard</a>
+        <a href="blockchain-monitor.html"  data-i18n="nav_integrity">Integrity Monitor</a>
+        <a href="audit-trail.html"  data-i18n="nav_audit">Audit Trail</a>
+        <a href="blockchain-ledger.html"  data-i18n="nav_ledger">Blockchain Ledger</a>
+      </div>
+    </nav>
+</aside>
+
+  <main class="main-content">
     <div class="text-center mb-16">
       <h1 class="text-4xl font-extrabold text-[#0a2e2f] mb-4 uppercase tracking-tight" data-i18n="pricing_title">CHOOSE YOUR GROWTH ENGINE</h1>
       <p class="text-slate-500 max-w-2xl mx-auto" data-i18n="pricing_subtitle">Professional deal room infrastructure tailored for high-stakes capital raising and due diligence.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+    <div class="flex flex-col md:flex-row gap-8 items-stretch justify-center">
       <!-- Pro Plan -->
-      <div class="card glass-card border-slate-200 flex flex-col h-full hover:scale-[1.02]">
+      <div class="card glass-card border-slate-200 flex flex-col w-full md:w-[420px] transition-all hover:shadow-xl">
         <div class="mb-8">
           <span class="text-[10px] font-black text-teal-600 bg-teal-100 px-3 py-1 rounded-full uppercase tracking-widest mb-4 inline-block" data-i18n="pricing_plan_pro">Pro / Trial</span>
-          <h2 class="text-3xl font-black text-[#0a2e2f]" data-i18n="pricing_plan_pro_desc">Professional</h2>
+          <h2 class="text-3xl font-black text-[#0a2e2f]" data-i18n="pricing_plan_pro_desc">For individual investors</h2>
           <div class="mt-4 flex items-baseline gap-1" data-i18n="pricing_price_pro">
             <span class="text-4xl font-black text-[#0a2e2f]">500,000 <u>đ</u></span>
             <span class="text-slate-400 font-bold text-sm">/ month</span>
           </div>
         </div>
         
-        <ul class="space-y-4 mb-10 flex-grow">
-          <li class="flex items-start gap-3 text-sm text-slate-600">
-            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_pro_1">Create 1 deal room for free</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-slate-600">
-            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_pro_2">Structured Deal Room Setup</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-slate-600">
-            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_pro_3">Investors cap: 100 person/project</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-slate-600">
-            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_pro_4">View basic analytics of investors</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-slate-600">
-            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_pro_5">Advanced permission control</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-slate-600">
-            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_pro_6">Screenshot protection</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-slate-600">
-            <svg class="w-5 h-5 text-teal-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_pro_7">Investor Engagement Tracking</span>
-          </li>
+        <ul class="space-y-3 mb-10 flex-grow">
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_1"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_2"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_3"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_4"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_5"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_6"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_7"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_8"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_9"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_10"></span></li>
+          <li class="flex items-start gap-3 text-sm text-slate-600"><svg class="w-4 h-4 text-teal-500 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_pro_11"></span></li>
         </ul>
 
-        <button class="w-full bg-[#0d7377] text-white py-4 rounded-xl font-black uppercase tracking-widest hover:bg-[#095c5f] transition-all" data-i18n="btn_choose_pro">Current Plan</button>
+        <button class="w-full bg-[#0d7377] text-white py-4 rounded-xl font-black uppercase tracking-widest hover:opacity-90 transition-all" data-i18n="btn_choose_pro">Current Plan</button>
       </div>
 
       <!-- Business Plan -->
-      <div class="card bg-[#0a2e2f] border-teal-900 border-2 shadow-2xl shadow-teal-900/20 flex flex-col h-full transform scale-105 z-10 hover:scale-[1.07]">
+      <div class="card bg-[#0a2e2f] border-teal-900 border-2 shadow-2xl flex flex-col w-full md:w-[420px] transition-all hover:shadow-teal-900/20">
         <div class="mb-8">
-          <span class="text-[10px] font-black text-white bg-[#0d7377] px-3 py-1 rounded-full uppercase tracking-widest mb-4 inline-block" data-i18n="pricing_plan_business">Growth / Enterprise</span>
-          <h2 class="text-3xl font-black text-white" data-i18n="pricing_plan_business_desc">Business</h2>
+          <span class="text-[10px] font-black text-white bg-[#0d7377] px-3 py-1 rounded-full uppercase tracking-widest mb-4 inline-block" data-i18n="pricing_plan_business">Business / Trial</span>
+          <h2 class="text-3xl font-black text-white" data-i18n="pricing_plan_business_desc">Enterprise Suite</h2>
           <div class="mt-4 flex items-baseline gap-1" data-i18n="pricing_price_business">
             <span class="text-4xl font-black text-white">3,000,000 <u>đ</u></span>
             <span class="text-slate-400 font-bold text-sm">/ month</span>
           </div>
         </div>
         
-        <ul class="space-y-4 mb-10 flex-grow">
-          <li class="flex items-start gap-3 text-sm text-teal-100">
-            <svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span class="font-bold" data-i18n="pricing_feature_biz_1">Everything in Pro</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-teal-100">
-            <svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_biz_2">Unlimited Deal Rooms</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-teal-100">
-            <svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_biz_3">Unlimited Investors</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-teal-100">
-            <svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_biz_4">Team Collaboration</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-teal-100">
-            <svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_biz_5">Priority 24/7 Support</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-teal-100">
-            <svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_biz_6">Require wealth verification to view</span>
-          </li>
-          <li class="flex items-start gap-3 text-sm text-teal-100">
-            <svg class="w-5 h-5 text-teal-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
-            <span data-i18n="pricing_feature_biz_7">Investors Intelligence Matching</span>
-          </li>
+        <ul class="space-y-3 mb-10 flex-grow">
+          <li class="flex items-start gap-3 text-sm text-teal-100"><svg class="w-4 h-4 text-teal-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span class="font-bold" data-i18n="pricing_feature_business_1"></span></li>
+          <li class="flex items-start gap-3 text-sm text-teal-100"><svg class="w-4 h-4 text-teal-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_business_2"></span></li>
+          <li class="flex items-start gap-3 text-sm text-teal-100"><svg class="w-4 h-4 text-teal-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_business_3"></span></li>
+          <li class="flex items-start gap-3 text-sm text-teal-100"><svg class="w-4 h-4 text-teal-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_business_4"></span></li>
+          <li class="flex items-start gap-3 text-sm text-teal-100"><svg class="w-4 h-4 text-teal-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_business_5"></span></li>
+          <li class="flex items-start gap-3 text-sm text-teal-100"><svg class="w-4 h-4 text-teal-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_business_6"></span></li>
+          <li class="flex items-start gap-3 text-sm text-teal-100"><svg class="w-4 h-4 text-teal-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_business_7"></span></li>
+          <li class="flex items-start gap-3 text-sm text-teal-100"><svg class="w-4 h-4 text-teal-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg><span data-i18n="pricing_feature_business_8"></span></li>
         </ul>
 
         <button class="w-full bg-white text-[#0a2e2f] py-4 rounded-xl font-black uppercase tracking-widest hover:bg-teal-50 transition-all shadow-lg" data-i18n="btn_upgrade_biz">Upgrade Now</button>
@@ -124,5 +120,5 @@
     // Force lender role for pricing view simulation
     localStorage.setItem('drg-role', 'lender');
   </script>
-</body>y>
+</body>
 </html>
