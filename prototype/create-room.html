@@ -61,11 +61,11 @@
         <div class="step-node step-pending" id="node-5">5</div>
       </div>
       <div class="flex justify-between mt-2 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
-        <span class="text-[#0d7377]" id="lbl-1" data-i18n="wizard_label_1">Phân loại</span>
-        <span id="lbl-2" data-i18n="wizard_label_2">Mục tiêu</span>
-        <span id="lbl-3" data-i18n="wizard_label_3">Tài chính</span>
-        <span id="lbl-4" data-i18n="wizard_label_4">Rủi ro</span>
-        <span id="lbl-5" data-i18n="wizard_label_5">Xác nhận</span>
+        <span class="text-[#0d7377]" id="lbl-1" data-i18n="wizard_label_1">Classification</span>
+        <span id="lbl-2" data-i18n="wizard_label_2">Target</span>
+        <span id="lbl-3" data-i18n="wizard_label_3">Finance</span>
+        <span id="lbl-4" data-i18n="wizard_label_4">Risk</span>
+        <span id="lbl-5" data-i18n="wizard_label_5">Confirmation</span>
       </div>
     </div>
 
@@ -125,11 +125,11 @@
           <div>
             <div class="flex justify-between mb-4">
               <label class="text-xs font-bold text-slate-400 uppercase tracking-widest" data-i18n="wizard_total_ask_label">Total Capital to be Raised</label>
-              <span class="text-2xl font-black text-teal-600" id="total-ask">125,000,000,000 VND</span>
+              <span class="text-2xl font-black text-teal-600" id="total-ask">125,000,000,000 <u>đ</u></span>
             </div>
             <input type="range" min="10" max="1000" value="125" step="5" class="w-full h-3 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-[#0d7377]" oninput="updateAsk(this.value)">
             <div class="flex justify-between mt-2 text-[10px] font-bold text-slate-400">
-              <span>10B</span><span>1,000B</span>
+              <span>10 Billion</span><span>1,000 Billion</span>
             </div>
           </div>
           <div>
@@ -234,15 +234,15 @@
             <label class="block text-xs font-bold text-slate-400 uppercase mb-4" data-i18n="wizard_risk_factors_label">Key Risk Factors</label>
             <div class="space-y-3">
               <div class="flex items-center justify-between p-3 bg-amber-50 border border-amber-100 rounded-lg">
-                <span class="text-sm font-bold" data-i18n="wizard_risk_fit">Biến động giá điện FIT</span>
+                <span class="text-sm font-bold" data-i18n="wizard_risk_fit">FIT Price Volatility</span>
                 <span class="text-[10px] font-black text-amber-600 bg-amber-100 px-2 py-0.5 rounded" data-i18n="wizard_risk_med">MEDIUM</span>
               </div>
               <div class="flex items-center justify-between p-3 bg-emerald-50 border border-emerald-100 rounded-lg">
-                <span class="text-sm font-bold" data-i18n="wizard_risk_esg">Rủi ro ESG / EUDR</span>
+                <span class="text-sm font-bold" data-i18n="wizard_risk_esg">ESG / EUDR Risks</span>
                 <span class="text-[10px] font-black text-emerald-600 bg-emerald-100 px-2 py-0.5 rounded" data-i18n="wizard_risk_low">LOW</span>
               </div>
               <div class="flex items-center justify-between p-3 bg-slate-50 border rounded-lg">
-                <span class="text-sm font-bold" data-i18n="wizard_risk_legal">Rủi ro pháp lý / Giấy phép xây dựng</span>
+                <span class="text-sm font-bold" data-i18n="wizard_risk_legal">Legal / Construction Licensing</span>
                 <span class="text-[10px] font-black text-slate-600 bg-slate-100 px-2 py-0.5 rounded" data-i18n="wizard_risk_handled">HANDLED</span>
               </div>
             </div>
