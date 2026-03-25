@@ -14,15 +14,23 @@
   <aside class="sidebar">
     <div class="px-6 py-8 text-center border-b border-white/10">
       <img src="shared/logo.png?v=3" alt="Matcha Capital" class="sidebar-logo mx-auto">
-      <p class="text-[10px] text-teal-400 mt-1 uppercase tracking-widest opacity-70">Unified View</p>
+      <div class="sidebar-section internal-only">
+        <p class="text-[10px] text-teal-400 mt-1 uppercase tracking-widest opacity-70" data-i18n="role_internal">Internal View</p>
+      </div>
+      <div class="sidebar-section lender-only">
+        <p class="text-[10px] text-emerald-300 mt-1 uppercase tracking-widest opacity-70" data-i18n="role_lender">Lender View</p>
+      </div>
+      <div class="sidebar-section admin-only">
+        <p class="text-[10px] text-rose-300 mt-1 uppercase tracking-widest opacity-70" data-i18n="role_admin">Admin View</p>
+      </div>
     </div>
-    <nav class="mt-4 space-y-4 pb-12">
+    <nav class="mt-4 space-y-2 pb-12">
       <div class="px-6 mb-4">
-        <a href="index.html" class="text-[10px] font-bold opacity-50 hover:opacity-100 transition-all uppercase tracking-widest" data-i18n="nav_hub">← Back to Hub</a>
+        <a href="index.html" class="p-0 text-[10px] font-bold opacity-50 hover:opacity-100 transition-all uppercase tracking-widest" data-i18n="nav_hub">← Back to Hub</a>
       </div>
       
-      <div>
-        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Internal View</p>
+      <!-- Internal Section -->
+      <div class="sidebar-section internal-only">
         <a href="dashboard.html"  data-i18n="nav_dashboard">Dashboard</a>
         <a href="company-verify.html"  data-i18n="nav_verify">Company Verify</a>
         <a href="create-room.html"  data-i18n="nav_initiate">Initiate Project</a>
@@ -32,18 +40,18 @@
         <a href="permission.html"  data-i18n="nav_permission">Permissions</a>
       </div>
 
-      <div>
-        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Lender View</p>
+      <!-- Lender Section -->
+      <div class="sidebar-section lender-only">
         <a href="deal-discovery.html"  data-i18n="nav_marketplace">Marketplace</a>
         <a href="investor-profile.html"  data-i18n="nav_profile">Investor Profile</a>
         <a href="verification-center.html"  data-i18n="nav_verification">Verification Center</a>
-        <a href="deal-room.html"  data-i18n="nav_vault_lender">Deal Room</a>
+        <a href="deal-room.html"  data-i18n="nav_vault">Deal Room</a>
         <a href="lender-view.html"  data-i18n="nav_my_deals">My Deals</a>
         <a href="indicative-offer.html"  data-i18n="nav_indicative">Indicative Offer</a>
       </div>
 
-      <div>
-        <p class="px-6 text-[9px] font-black text-teal-500/50 uppercase tracking-[0.2em] mb-2">Admin View</p>
+      <!-- Admin Section -->
+      <div class="sidebar-section admin-only">
         <a href="admin-dashboard.html" class="active" data-i18n="nav_admin_global">Admin Dashboard</a>
         <a href="blockchain-monitor.html"  data-i18n="nav_integrity">Integrity Monitor</a>
         <a href="audit-trail.html"  data-i18n="nav_audit">Audit Trail</a>

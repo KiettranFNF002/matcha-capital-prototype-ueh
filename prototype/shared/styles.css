@@ -101,6 +101,15 @@ label:has(input[type="checkbox"]:checked) span {
   z-index: 50;
 }
 
+.sidebar-section {
+  display: none; /* Hidden by default */
+}
+
+/* Role Visibility Logic */
+.role-internal .sidebar-section.internal-only { display: block; }
+.role-lender .sidebar-section.lender-only { display: block; }
+.role-admin .sidebar-section.admin-only { display: block; }
+
 .sidebar a {
   display: block;
   padding: 0.75rem 1.5rem;
