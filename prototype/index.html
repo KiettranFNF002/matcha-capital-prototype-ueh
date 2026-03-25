@@ -1,7 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Matcha Capital — Prototype Hub</title> <script src="https://cdn.tailwindcss.com"></script> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> <link rel="stylesheet" href="shared/styles.css"> <script src="shared/translations.js"></script> <script src="shared/i18n.js"></script> <style> .map-card { transition: all 0.3s ease-in-out; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); cursor: pointer; } .map-card:hover { transform: translateY(-5px); background: rgba(255,255,255,0.1); border-color: #0d7377; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4); } </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matcha Capital — Prototype Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shared/styles.css">
+    <script src="shared/translations.js"></script>
+    <script src="shared/i18n.js"></script>
+    <style>
+        .map-card {
+            transition: all 0.3s ease-in-out;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            cursor: pointer;
+        }
+        .map-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.1);
+            border-color: #0d7377;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4);
+        }
+    </style>
 </head>
-<body class="bg-[#0a2d2f] font-['Inter'] text-slate-300"> <div class="max-w-6xl mx-auto px-6 py-12"> <header class="mb-16 text-center"> <img src="shared/logo.png?v=3" alt="Matcha Capital" class="h-28 mx-auto mb-6 brightness-110"> <p class="text-teal-400 font-bold uppercase tracking-widest text-xs" data-i18n="hub_subtitle">Visual Roadmap & Prototype Hub — 17 Screens</p> <div class="mt-8 flex justify-center gap-4"> <a href="login.html" class="px-8 py-3 bg-[#0d7377] text-white rounded-xl font-bold shadow-xl shadow-teal-900/20 hover:scale-105 transition-all" data-i18n="btn_login">START DEMO (LOGIN)</a> </div> </header> <div class="grid grid-cols-1 md:grid-cols-3 gap-12"> <!-- Phase A: Internal --> <div> <h2 class="text-xs font-black text-teal-600/50 uppercase tracking-[0.3em] mb-6 border-b border-white/10 pb-2" data-i18n="hub_phase_1">01. DRG INTERNAL (INTERNAL)</h2> <div class="space-y-3"> <div onclick="window.location.href='dashboard.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_dashboard">Dashboard</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_dash">Finance & KPI Overview (EBITDA, DSCR)</p> </div> <div onclick="window.location.href='company-verify.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_verify">Company Verify</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_cv">Tax ID, License, Identity Verification</p> </div> <div onclick="window.location.href='create-room.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_initiate">Initiate Project</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_wizard">Initiate Project (Goals, Tenor, Risks)</p> </div> <div onclick="window.location.href='upload-docs.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_vault">Document Vault</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_vdr">Folder Tree, Q&A, Audit, KPI Bar</p> </div> <div onclick="window.location.href='distribution.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_distribution">Distribution</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_dist">Lender Matching & Private/Public Mode</p> </div> <div onclick="window.location.href='deal-pipeline.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_pipeline">Deal Pipeline</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_pipeline">Kanban Board: Outreach → Disbursing</p> </div> <div onclick="window.location.href='permission.html'" class="map-card p-4 rounded-xl"> <h3 class="font-bold text-white" data-i18n="nav_permission">Permissions</h3> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_perm">Manage access rights per Stage</p> </div> </div> </div> <!-- Phase B: Lender --> <div> <h2 class="text-xs font-black text-teal-600/50 uppercase tracking-[0.3em] mb-6 border-b border-white/10 pb-2" data-i18n="hub_phase_2">02. LENDER / INVESTOR SIDE</h2> <div class="space-y-3"> <div onclick="window.location.href='admin-dashboard.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_marketplace">Marketplace</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_market">Deal Discovery, IRR/NPV Cards, Filters</p> </div> <div onclick="window.location.href='investor-profile.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_profile">Investor Profile</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_profile">Individual vs Institutional Selector</p> </div> <div onclick="window.location.href='verification-center.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_verification">Verification</h3> </div> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_verify">KYC/KYB & Bank API Proof-of-Funds</p> </div> <div onclick="window.location.href='deal-room.html'" class="map-card p-4 rounded-xl"> <h3 class="font-bold text-white" data-i18n="nav_vault">Lender Deal Room</h3> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_room">Viewer mode for Data Room docs</p> </div> <div onclick="window.location.href='lender-view.html'" class="map-card p-4 rounded-xl"> <h3 class="font-bold text-white" data-i18n="nav_indicative">Term Sheet Portal</h3> <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_ts">Submit Offers & Receive Feedback</p> </div> </div> </div> <!-- Phase C: Admin --> <div> <h2 class="text-xs font-black text-rose-600/50 uppercase tracking-[0.3em] mb-6 border-b border-white/10 pb-2" data-i18n="hub_phase_3">03. AUDIT & ADMIN SIDE</h2> <div class="space-y-3"> <div onclick="window.location.href='admin-dashboard.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_admin_global">Global Dashboard</h3> </div> <p class="text-[10px] text-rose-400/60 uppercase tracking-tighter" data-i18n="hub_desc_admin">Traffic, System Health, Global Alerts</p> </div> <div onclick="window.location.href='blockchain-monitor.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_integrity">Integrity Monitor</h3> </div> <p class="text-[10px] text-rose-400/60 uppercase tracking-tighter" data-i18n="hub_desc_integrity">Mismatch Handling & Room Suspensions</p> </div> <div onclick="window.location.href='audit-trail.html'" class="map-card p-4 rounded-xl"> <h3 class="font-bold text-white" data-i18n="nav_audit">Audit Trail</h3> <p class="text-[10px] text-rose-400/60 uppercase tracking-tighter" data-i18n="hub_desc_audit">Blockchain Block Refs & Access Logs</p> </div> <div onclick="window.location.href='blockchain-ledger.html'" class="map-card p-4 rounded-xl"> <div class="flex justify-between items-start mb-1"> <h3 class="font-bold text-white" data-i18n="nav_ledger">Blockchain Ledger</h3> </div> <p class="text-[10px] text-rose-400/60 uppercase tracking-tighter" data-i18n="hub_desc_ledger">Raw ledger view of transaction hashes</p> </div> </div> </div> </div> <footer class="mt-20 pt-8 border-t border-white/10 flex justify-between items-center text-[10px] font-bold text-teal-600/40 uppercase tracking-widest"> <span data-i18n="footer_version">Matcha Capital Prototype v2.0</span> <div class="flex gap-4"> <span class="text-teal-600" data-i18n="footer_secure">Secured by Blockchain</span> </div> </footer> </div>
+<body class="bg-[#0a2d2f] font-['Inter'] text-slate-300">
+    <div class="max-w-6xl mx-auto px-6 py-12">
+        <header class="mb-16 text-center">
+            <img src="shared/logo.png?v=3" alt="Matcha Capital" class="h-28 mx-auto mb-6 brightness-110">
+            <p class="text-teal-400 font-bold uppercase tracking-widest text-xs" data-i18n="hub_subtitle">Visual Roadmap & Prototype Hub — 18 Screens</p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="login.html" class="px-8 py-3 bg-[#0d7377] text-white rounded-xl font-bold shadow-xl shadow-teal-900/20 hover:scale-105 transition-all" data-i18n="btn_login">START DEMO (LOGIN)</a>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Phase A: Internal -->
+            <div>
+                <h2 class="text-xs font-black text-teal-600/50 uppercase tracking-[0.3em] mb-6 border-b border-white/10 pb-2" data-i18n="hub_phase_1">01. DRG INTERNAL (INTERNAL)</h2>
+                <div class="space-y-3">
+                    <div onclick="window.location.href='dashboard.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_dashboard">Dashboard</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_dash">Finance & KPI Overview (EBITDA, DSCR)</p>
+                    </div>
+                    <div onclick="window.location.href='company-verify.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_verify">Company Verify</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_cv">Tax ID, License, Identity Verification</p>
+                    </div>
+                    <div onclick="window.location.href='create-room.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_initiate">Initiate Project</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_wizard">Initiate Project (Goals, Tenor, Risks)</p>
+                    </div>
+                    <div onclick="window.location.href='upload-docs.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_vault">Document Vault</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_vdr">Folder Tree, Q&A, Audit, KPI Bar</p>
+                    </div>
+                    <div onclick="window.location.href='distribution.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_distribution">Distribution</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_dist">Lender Matching & Private/Public Mode</p>
+                    </div>
+                    <div onclick="window.location.href='deal-pipeline.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_pipeline">Deal Pipeline</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_pipeline">Kanban Board: Outreach → Disbursing</p>
+                    </div>
+                    <div onclick="window.location.href='permission.html'" class="map-card p-4 rounded-xl">
+                        <h3 class="font-bold text-white" data-i18n="nav_permission">Permissions</h3>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_perm">Manage access rights per Stage</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase B: Lender -->
+            <div>
+                <h2 class="text-xs font-black text-teal-600/50 uppercase tracking-[0.3em] mb-6 border-b border-white/10 pb-2" data-i18n="hub_phase_2">02. LENDER / INVESTOR SIDE</h2>
+                <div class="space-y-3">
+                    <div onclick="window.location.href='deal-discovery.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_marketplace">Marketplace</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_market">Deal Discovery, IRR/NPV Cards, Filters</p>
+                    </div>
+                    <div onclick="window.location.href='investor-profile.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_profile">Investor Profile</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_profile">Individual vs Institutional Selector</p>
+                    </div>
+                    <div onclick="window.location.href='verification-center.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_verification">Verification</h3>
+                        </div>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_verify">KYC/KYB & Bank API Proof-of-Funds</p>
+                    </div>
+                    <div onclick="window.location.href='deal-room.html'" class="map-card p-4 rounded-xl">
+                        <h3 class="font-bold text-white" data-i18n="nav_vault">Lender Deal Room</h3>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_room">Viewer mode for Data Room docs</p>
+                    </div>
+                    <div onclick="window.location.href='lender-view.html'" class="map-card p-4 rounded-xl">
+                        <h3 class="font-bold text-white" data-i18n="nav_my_deals">My Deals Portal</h3>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_ts">View Invitations & Project Status</p>
+                    </div>
+                    <div onclick="window.location.href='indicative-offer.html'" class="map-card p-4 rounded-xl">
+                        <h3 class="font-bold text-white" data-i18n="nav_indicative">Indicative Offer</h3>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_offer">Submit & register non-binding bids</p>
+                    </div>
+                    <div onclick="window.location.href='pricing.html'" class="map-card p-4 rounded-xl">
+                        <h3 class="font-bold text-white" data-i18n="nav_pricing">Pricing Plan</h3>
+                        <p class="text-[10px] text-teal-400/60 uppercase tracking-tighter" data-i18n="hub_desc_pricing">Pro & Business Tiers Overview</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phase C: Admin -->
+            <div>
+                <h2 class="text-xs font-black text-rose-600/50 uppercase tracking-[0.3em] mb-6 border-b border-white/10 pb-2" data-i18n="hub_phase_3">03. AUDIT & ADMIN SIDE</h2>
+                <div class="space-y-3">
+                    <div onclick="window.location.href='admin-dashboard.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_admin_global">Global Dashboard</h3>
+                        </div>
+                        <p class="text-[10px] text-rose-400/60 uppercase tracking-tighter" data-i18n="hub_desc_admin">Traffic, System Health, Global Alerts</p>
+                    </div>
+                    <div onclick="window.location.href='blockchain-monitor.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_integrity">Integrity Monitor</h3>
+                        </div>
+                        <p class="text-[10px] text-rose-400/60 uppercase tracking-tighter" data-i18n="hub_desc_integrity">Mismatch Handling & Room Suspensions</p>
+                    </div>
+                    <div onclick="window.location.href='audit-trail.html'" class="map-card p-4 rounded-xl">
+                        <h3 class="font-bold text-white" data-i18n="nav_audit">Audit Trail</h3>
+                        <p class="text-[10px] text-rose-400/60 uppercase tracking-tighter" data-i18n="hub_desc_audit">Blockchain Block Refs & Access Logs</p>
+                    </div>
+                    <div onclick="window.location.href='blockchain-ledger.html'" class="map-card p-4 rounded-xl">
+                        <div class="flex justify-between items-start mb-1">
+                            <h3 class="font-bold text-white" data-i18n="nav_ledger">Blockchain Ledger</h3>
+                        </div>
+                        <p class="text-[10px] text-rose-400/60 uppercase tracking-tighter" data-i18n="hub_desc_ledger">Raw ledger view of transaction hashes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-20 pt-8 border-t border-white/10 flex justify-between items-center text-[10px] font-bold text-teal-600/40 uppercase tracking-widest">
+            <span data-i18n="footer_version">Matcha Capital Prototype v2.0</span>
+            <div class="flex gap-4">
+                <span class="text-teal-600" data-i18n="footer_secure">Secured by Blockchain</span>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
