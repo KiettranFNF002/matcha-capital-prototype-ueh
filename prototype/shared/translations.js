@@ -762,6 +762,8 @@ const translations = {
     // 14. Footer
     footer_version: "",
     footer_secure: "Secured by Blockchain",
+    logo_path: "shared/logo_white.png",
+    logo_path_dark: "shared/logo_black.png",
 
     // 15. VDR Extra Keys
     vdr_structure: "DOCUMENT STRUCTURE",
