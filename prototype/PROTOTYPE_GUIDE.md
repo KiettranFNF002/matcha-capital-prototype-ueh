@@ -1,203 +1,80 @@
-# Matcha Capital — Prototype Guide
+# Matcha Capital — Official Prototype Guide
 
-**Matcha Capital** is a Capital Infrastructure Platform that connects companies seeking capital (Borrowers) with institutional investors (Lenders) through a secure, blockchain-verified Virtual Data Room (VDR) and Deal Marketplace. This guide walks you through all 18 screens.
+**Matcha Capital** is a next-generation **Capital Infrastructure Platform**. It bridges the gap between high-growth companies (Borrowers) and institutional investors (Lenders) by replacing fragmented email-based fundraising with a secure, **Blockchain-Verified Virtual Data Room (VDR)**.
 
----
-
-## How to Start
-
-1. Open `index.html` — this is the **Visual Hub** showing the full prototype map.
-2. Click **START DEMO (LOGIN)** to enter the role selection screen.
-3. Choose one of three roles. Each role unlocks a different set of screens via the sidebar.
+This guide is designed to help you navigate and demonstrate the 18+ screens of this prototype with maximum impact.
 
 ---
 
-## Three Roles Explained
+## 🚀 Getting Started
 
-| Role | Who They Are | What They Do |
+1. **Launch the Hub:** Open `index.html` in your browser. This is your "Map" of the entire ecosystem.
+2. **Access the Demo:** Click **START DEMO** to reach the role-selection screen (`login.html`).
+3. **Role Persistence:** The prototype uses `localStorage` to remember your role. To reset or switch, simply return to the Login screen.
+
+---
+
+## 🎭 The Three User Personas
+
+| Persona | Role in Ecosystem | Key Objective |
 |---|---|---|
-| **DRG Internal** | CFO / Finance team of the borrowing company | Create deal rooms, upload documents, manage capital raising |
-| **Lender / Investor** | Banks, PE funds, green finance institutions | Discover deals, conduct due diligence, submit term sheets |
-| **Platform Admin** | Matcha Capital system administrators | Monitor system integrity, detect document fraud via blockchain |
-
-> **Technical Note:** Roles are stored in `localStorage`. Each screen sets its own role to ensure the correct sidebar navigation appears. The sidebar dynamically shows/hides menu items based on the active role using CSS classes (`.internal-only`, `.lender-only`, `.admin-only`).
+| **CFO (DRG Internal)** | The Capital Seeker | Structure the deal, upload "Green" proof, and manage lender access. |
+| **Investor (Lender)** | The Capital Provider | Discover verified deals, perform due diligence, and submit Term Sheets. |
+| **Auditor (Admin)** | The Trust Guardian | Monitor data integrity and detect document tampering using Blockchain. |
 
 ---
 
-## Screen-by-Screen Breakdown
+## 📖 Guided Narrative Walkthrough
 
-### HUB & LOGIN (Shared)
+### Flow A: The CFO's "5-Minute Fundraising" Journey
+*Goal: Move from local spreadsheets to a blockchain-sealed deal room.*
 
-#### 1. Hub (`index.html`)
-**Purpose:** High-level overview map of the entire prototype, organized by role. Serves as the "table of contents" for stakeholder demonstrations.
-- **Logo:** White version for dark background branding.
-- **Role Cards:** Three columns (Internal / Lender / Admin) with clickable links to each screen.
-- **Footer:** "Secured by Blockchain" — reinforces the platform's core trust proposition.
+1. **Dashboard (`dashboard.html`):** Start here to see the high-level financial health of the group. Note the **EBITDA** and **DSCR** metrics — these are what lenders crave.
+2. **Project Initiation (`create-room.html`):** Walk through the 5-step wizard.
+   - *Demo Hack:* Point out Step 5 where the system generates a **Blockchain Hash** for the project concept. This is the first "Proof of Intent".
+3. **Document Vault (`upload-docs.html`):** This is the core engine. Documents are organized into 4 critical folders (Legal, Financial, Tech, ESG). 
+   - *Key Feature:* Notice the **S1, S2, S3 badges**. This represents **Tiered Privacy** — lenders only see what they have permission for.
+4. **Deal Pipeline (`deal-pipeline.html`):** Track progress in a Kanban view. This is where the CFO manages the "Funnel" of interested banks.
 
-#### 2. Login (`login.html`)
-**Purpose:** Simulates role-based authentication. In a real system, this would integrate with Banking API for KYC/KYB verification.
-- **Three Role Buttons:** Each navigates to the default landing page for that role and stores the role in `localStorage`.
-- **Logo:** Dark version for light background contrast.
+### Flow B: The Investor's "Trusted Investment" Journey
+*Goal: Find a high-yield green project and verify its claims.*
 
----
+1. **Marketplace (`deal-discovery.html`):** Browse the listings. 
+   - *Key Feature:* **Blind Profiles**. Notice you see "Agri-Materials Group" instead of "Dak Lak Rubber". This protects the borrower's reputation during early outreach.
+2. **Verification Center (`verification-center.html`):** Connect to a simulated Bank API to prove **Proof of Funds (POF)**. This filters out "tire-kickers" and ensures only serious capital enters the room.
+3. **The Secure Deal Room (`deal-room.html`):** Experience the ultimate privacy. 
+   - *Key Feature:* **Watermark & Anti-Download**. Every document has a "CONFIDENTIAL" diagonal overlay. This is a premium security feature for high-stakes finance.
+4. **Indicative Offer (`indicative-offer.html`):** Instead of a messy email, the lender submits a **Structured Term Sheet** which is instantly hashed to the ledger.
 
-### GROUP 1: DRG INTERNAL (Borrower — 7 Screens)
+### Flow C: The Admin's "Zero-Trust" Security Audit
+*Goal: Ensure no data tampering has occurred during the deal lifecycle.*
 
-> *These screens represent the CFO's journey: from verifying the company, to creating a deal, uploading documents, distributing to lenders, and tracking progress.*
-
-#### 3. Dashboard (`dashboard.html`)
-**Purpose:** The CFO's command center — a real-time overview of the company's financial health and active capital-raising activities.
-- **Financial Summary Cards:** Debt/Equity ratio, EBITDA, DSCR — key metrics lenders will evaluate.
-- **Active Deals Table:** Shows project names, target amounts, committed capital, and status. Allows CFO to quickly assess which deals need attention.
-- **Notifications Panel:** Recent activities (lender requests, document uploads) to keep CFO informed.
-
-#### 4. Company Verify (`company-verify.html`)
-**Purpose:** KYC/KYB for the borrowing company itself. Before creating any deal, the company must prove its legitimacy.
-- **Business Registration Input:** Tax ID (MST) and business license (GPKD) fields.
-- **AI Data Extraction:** Simulates automated document parsing to reduce manual data entry.
-- **Verification Status:** Shows blockchain-anchored verification result with hash.
-
-#### 5. Initiate Project (`create-room.html`)
-**Purpose:** The 5-step wizard for creating a new capital request. This mirrors the real-world process of structuring a fundraising pitch.
-- **Step 1 — Classification:** Project name, capital structure type (Green Finance, Working Capital, Trade Finance, Investment Capital), funding type (Debt/Equity/Hybrid), and purpose of funds.
-- **Step 2 — Capital Needs:** Total ask (slider from 10B–1,000B đ), use of funds breakdown, disbursement method (lump-sum or milestone-based).
-- **Step 3 — Timeline & Cash Flow:** Disbursement dates, grace period, payback period, and financial metrics (IRR, NPV, DSCR).
-- **Step 4 — Target Investors:** Appropriate investor types (Banks, PE, Green Funds, FDI) and key risk factors with severity badges.
-- **Step 5 — Confirmation:** Project summary review and blockchain registration with a live SHA-256 hashing animation.
-- **Post-Submit Navigation:** Links to Document Vault, Distribution, and Deal Pipeline for next steps.
-
-#### 6. Document Vault / Secure Data Room (`upload-docs.html`)
-**Purpose:** The core VDR where borrowers manage all confidential project documents. This is the "single source of truth" that replaces scattered email attachments.
-- **Project Header Bar:** Shows target amount, committed capital, interested lenders, and remaining days.
-- **4-Folder Structure:** Legal, Financial, Technical, ESG/EUDR — standardized for due diligence efficiency.
-- **Document Table:** File names, stage badges (S-1, S-2, S-3 representing tiered access levels), compliance status, blockchain hash verification, and action buttons (View/Delete).
-- **Lender Management Panel:** Shows which lenders have signed NDAs and which are pending.
-- **Q&A Window:** Inline discussion per document — replaces back-and-forth email chains.
-- **Access Log (Audit):** Timestamped log of every view, upload, and stage change — CFO can see exactly who viewed what and when.
-- **Action Bar:** "Seal Data Room" (lock), "Export Report", and "Issue Deal" (send to distribution).
-
-#### 7. Distribution (`distribution.html`)
-**Purpose:** Controls how and to whom the deal is published — private targeted invitations or open marketplace listing.
-- **Distribution Modes:** Private (targeted lender list) or Public (marketplace visible).
-- **Lender Matching Engine:** Suggests suitable lenders based on deal characteristics.
-- **Outreach Tracking:** Status of each invitation (sent, opened, responded).
-
-#### 8. Deal Pipeline (`deal-pipeline.html`)
-**Purpose:** Kanban-style board tracking all deals from first contact to disbursement — the CFO's portfolio management view.
-- **Pipeline Columns:** Draft → Data Gathering → Active Pitching → Term Sheet Issued → Closed.
-- **Deal Cards:** Each card shows project name, amount, and current stage.
-- **Drag-and-Drop (Simulated):** Visual representation of deal progression.
-
-#### 9. Permissions (`permission.html`)
-**Purpose:** Granular access control for the secure data room — determines what each lender can see at each stage of the due diligence process.
-- **Group Permissions:** Defines access levels per lender group.
-- **Stage-Based Access:** Tier 1 (Public Synopsis), Tier 2 (Basic Financials), Tier 3 (Full VDR with NDA).
-- **Download Controls:** Block direct downloads, enforce view-only with watermark.
+1. **Blockchain Monitor (`blockchain-monitor.html`):** This is the "WOW" screen for technical stakeholders.
+   - *The Mismatch:* Notice the **Red Row**. The system has detected that a "Debt Repayment Plan" was modified after being sealed on the blockchain. 
+   - *Action:* The Admin can instantly **Suspend the Room** to prevent fraud.
+2. **Audit Trail (`audit-trail.html`):** A forensic log of every single click. Every action is tied to a **Blockchain Block Number**, making it legally defensible.
 
 ---
 
-### GROUP 2: LENDER / INVESTOR (6 Screens)
+## 🛠️ Trust Mechanics (The "Special Sauce")
 
-> *These screens represent the investor's journey: from verifying their identity, to discovering deals, entering data rooms, and submitting term sheets.*
-
-#### 10. Marketplace (`deal-discovery.html`)
-**Purpose:** The "deal supermarket" — a curated listing of all available capital requests.
-- **Filter Bar:** Sector (Rubber/Solar/Agri), Type (Loan/Equity), Risk Rating, Green Deals toggle.
-- **Deal Cards:** Each shows badge (Green Finance, Low Risk, High Growth, Cross-Border), project name with blind profile (identity hidden at Tier 1), financial metrics (Target, IRR, EBITDA, Tenor, Collateral), and action buttons (View Teaser, Request Access).
-- **Blind Profile Design:** Companies appear as "Agri-Materials Group — Highlands, VN" rather than by real name — a critical privacy feature for the CFO.
-
-#### 11. Investor Profile (`investor-profile.html`)
-**Purpose:** Lender self-classification — determines their investment appetite and capability.
-- **Profile Type:** Individual vs. Institutional investor.
-- **Investment Preferences:** Preferred sectors, deal sizes, risk tolerance.
-
-#### 12. Verification Center (`verification-center.html`)
-**Purpose:** KYC/KYB for lenders — ensures only accredited investors access confidential deal rooms.
-- **Banking API Connection:** Simulates Proof-of-Funds verification.
-- **Accreditation Status:** Shows verified credentials and approved sectors.
-
-#### 13. Deal Room (`deal-room.html`)
-**Purpose:** The lender's view of a specific project's secure data room — with view-only protections.
-- **Watermark Overlay:** "CONFIDENTIAL · VIEW ONLY" diagonal watermark across the document area — prevents unauthorized sharing.
-- **Document List:** Files with blockchain verification badges.
-- **Version History:** Track document changes (V1.0 Draft → V2.1 Review → V3.0 Final).
-- **"Need More Access?" Panel:** Request Full Access (leads to Pricing) or Ask a Question (Q&A).
-- **Immutable Hash Display:** Shows the blockchain hash for the current document set.
-
-#### 14. My Deals (`lender-view.html`)
-**Purpose:** Portfolio management for the lender — tracks all deals they're participating in.
-- **Active Deals:** Deals the lender has requested or been granted access to.
-- **Request Status:** Pending, Approved, or Rejected.
-- **Term Sheet History:** Previously submitted offers.
-
-#### 15. Indicative Offer (`indicative-offer.html`)
-**Purpose:** Structured form for submitting a term sheet — replaces informal email negotiations.
-- **Term Sheet Fields:** Proposed interest rate, grace period, conditions precedent (e.g., collateral requirements).
-- **Blockchain Anchoring:** Submitted term sheet is hashed and recorded on-chain.
-
----
-
-### GROUP 3: ADMIN / AUDIT (4 Screens)
-
-> *These screens represent the platform administrator's oversight role: ensuring system integrity and detecting any data tampering.*
-
-#### 16. Admin Dashboard (`admin-dashboard.html`)
-**Purpose:** Platform-wide health overview — the control tower for Matcha Capital operations.
-- **Global Stats:** Total live deals, total capital raised, active lenders, security alerts.
-- **Deals Monitoring Table:** Lists projects requiring attention, with blockchain status (Green/Warning) and latest activity.
-- **System Traffic Chart:** Visual representation of platform usage over time.
-- **Engine Logs:** Real-time system event feed (logins, verifications, warnings).
-
-#### 17. Integrity Monitor (`blockchain-monitor.html`)
-**Purpose:** The heart of Matcha Capital's trust proposition — automated detection of document tampering.
-- **Mismatch Detection:** Shows documents where the current file hash doesn't match the on-chain record.
-- **Room Suspension:** Ability to suspend a deal room when fraud is detected.
-- **Lender Notification:** Alert system to notify lenders when integrity is compromised.
-
-#### 18. Audit Trail (`audit-trail.html`)
-**Purpose:** Comprehensive activity log with blockchain block references — ultimate accountability.
-- **Event Log:** Every user action (view, upload, download attempt, access grant) timestamped and linked to a blockchain block.
-- **Filter & Search:** By user, action type, date range, or deal room.
-- **Block References:** Each event shows its corresponding blockchain block number for independent verification.
-
-#### 19. Blockchain Ledger (`blockchain-ledger.html`)
-**Purpose:** Raw on-chain transaction viewer — technical proof that the blockchain layer is real and functional.
-- **Chain Stats:** Total blocks, documents anchored, mismatches detected, last block time.
-- **Transaction Log:** SHA-256 hashes for every on-chain event, color-coded by type (DOC=Document, ACC=Access, OFR=Term Sheet, ERR=Mismatch).
-- **Mismatch Highlighting:** Red-highlighted rows showing expected vs. actual hash values — demonstrates the fraud detection mechanism.
-- **Pagination:** Standard table pagination for browsing historical records.
-
----
-
-### BONUS SCREEN
-
-#### 20. Pricing (`pricing.html`)
-**Purpose:** Demonstrates the platform's revenue model — a critical component of the Business Model Canvas presented to the class.
-- **Pro Plan (500,000đ/month):** 1 deal room, 100 investor cap, basic analytics, screenshot protection.
-- **Business Plan (3,000,000đ/month):** 3 deal rooms, unlimited investors, custom deal structuring, investor matching, priority support.
-- **No Annual Commitment:** Flexible SaaS model.
-
----
-
-## Core Technology Features
-
-| Feature | What It Does | Why It Matters |
+| Feature | Technical Implementation | Why It Wins Deals |
 |---|---|---|
-| **Blockchain Hashing (SHA-256)** | Every uploaded file is hashed and the hash is stored on an immutable ledger | Prevents document tampering; any file change creates a detectable mismatch |
-| **Stage-Based Access (Tier 1-3)** | Documents unlock gradually as the lender progresses through due diligence | Protects sensitive data; reveals information only when trust is established |
-| **Watermark & View-Only** | Documents display a diagonal watermark and block direct downloads | Prevents unauthorized distribution of confidential financial data |
-| **Blind Profile** | Company identity hidden at Tier 1 marketplace level | Protects CFO's reputation during mass outreach to multiple lenders |
-| **Q&A Inline Discussions** | Questions posted directly on document context | Eliminates email chain confusion; keeps all communication auditable |
-| **Audit Trail** | Every click, view, and action is logged with timestamps | CFO knows exactly who viewed what, and for how long |
-| **Role-Based Navigation** | Sidebar dynamically shows only relevant screens per role | Clean UX; users see only what they need for their workflow |
+| **SHA-256 Hashing** | Every file generates a unique digital fingerprint. | Eliminates the possibility of "shadow folders" or document swapping. |
+| **Tiered Access (T1-T3)** | Logic-gated folders based on NDA status. | Allows the CFO to share a Teaser publicly while keeping the P&L private. |
+| **Immutable Ledger** | A simulated transparent log of all transaction hashes. | Provides an "Audit Trail of Truth" for regulators and auditors. |
+| **SVG Standard** | Professional, high-contrast iconography. | Replaces amateurish emojis with a high-end corporate fintech aesthetic. |
 
 ---
 
-## Navigation Tips
+## 🎤 Tips for a Winning Presentation
 
-- **Back to Hub:** Available on every screen's sidebar — returns to the visual overview.
-- **Role Switching:** Return to `login.html` to switch between Internal, Lender, and Admin views.
-- **Screen Count:** 18 functional screens + 1 Hub + 1 Login = 20 total pages.
+1. **Start with the Pain Point:** Mention that traditional fundraising takes months of "email ping-pong" and has high fraud risk.
+2. **Show, Don't Just Tell:** When you click "Submit" in the Wizard, point out the **Hashing Animation**. It makes the technology feel "alive".
+3. **Focus on the "Security Mismatch":** Spend 30 seconds on the **Integrity Monitor**. Explain that if a hacker (or a dishonest employee) changes 1% of a document, the system will turn **Red**. This usually gets the best reaction from stakeholders.
+4. **Mention the Branding:** Note the consistent use of **Emerald/Teal accents and Dark-Mode Sidebars** — this was designed to feel like a premium Bloomberg or BlackRock Bloomberg terminal.
+
+--- **Screen Count:** 18 functional screens + 1 Hub + 1 Login = 20 total pages.
 
 ---
 
