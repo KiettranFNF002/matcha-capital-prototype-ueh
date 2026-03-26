@@ -360,7 +360,9 @@ const translations = {
 
     // 14. Footer
     footer_version: "",
-    footer_secure: "Bảo mật bởi Blockchain"
+    footer_secure: "Bảo mật bởi Blockchain",
+    logo_path: "shared/logo_white.png",
+    logo_path_dark: "shared/logo_black.png"
   },
   en: {
     // 1. Navigation & Sidebar
