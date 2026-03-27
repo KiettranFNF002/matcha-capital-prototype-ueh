@@ -1,9 +1,11 @@
-# Temporary files
-all_html.txt
-standardized_docs.txt
-local_ingest.py
+# Ignore everything
+/*
 
-# System files
-.gemini/
-.DS_Store
-Thumbs.db
+# Except these
+!/prototype/
+!README.md
+!.gitignore
+
+# Also ignore system/temp files inside prototype if any
+prototype/.DS_Store
+prototype/Thumbs.db
