@@ -1,0 +1,559 @@
+╔══════════════════════════════════════════════════════════════╗
+║  LOCAL INGEST — Tổng hợp Codebase                          ║
+║  Thời gian: 2026-03-26 23:01:39                          ║
+║  Tổng số file: 11                                          ║
+╚══════════════════════════════════════════════════════════════╝
+
+============================================================
+📂 CẤU TRÚC THƯ MỤC (Directory Tree)
+============================================================
+
+📁 Standardized/
+├── 01_Company_Overview_&_Financial_Diagnosis.md
+├── 02_CFO_Interview_Transcript.md
+├── 03_User_Persona_&_JTBD.md
+├── 04_Value_Proposition_Canvas.md
+├── 05_Business_Model_Canvas.md
+├── 06_Product_Flow_&_Architecture.md
+├── 07_Capital_Initiation_&_Distribution.md
+├── 08_Lender_Verification_&_Discovery.md
+├── 09_Admin_Security_&_Blockchain.md
+├── 10_Course_Guidance_&_Rubrics.md
+└── audit_requirements.md
+
+
+============================================================
+📄 NỘI DUNG CÁC FILE
+============================================================
+
+────────────────────────────────────────────────────────────
+📄 File: 01_Company_Overview_&_Financial_Diagnosis.md
+   Kích thước: 4.8 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 01. Company Overview & Financial Diagnosis (DRG)
+
+## I. Giới thiệu Doanh nghiệp (Company Overview)
+*   **Tên công ty:** Daklak Rubber Joint Stock Company (Dakruco)
+*   **Mã chứng khoán (Ticker):** DRG
+*   **Ngành nghề:** Materials (Hóa chất cơ bản / Nguyên vật liệu)
+*   **Hoạt động cốt lõi:** Trồng trọt, khai thác, chế biến và xuất khẩu mủ cao su. (Bên cạnh đó, đang mở rộng sang chế biến nông sản, sầu riêng, chuối, trái cây đóng gói, điện mặt trời và đầu tư FDI tại Lào, Campuchia).
+
+## II. Bối cảnh Tài chính (2021 - 2025)
+Công ty đã trải qua một thời kỳ biến động mạnh từ 2021 đến 2025 do ảnh hưởng của chu kỳ giá cao su toàn cầu giảm sâu (2022-2024), dẫn đến sức ép thanh khoản ngắn hạn và suy yếu dòng tiền hoạt động trước khi phục hồi nhẹ vào năm 2025.
+
+### Các dấu hiệu cốt lõi từ Báo cáo Tài chính
+1.  **Lệch pha trưởng thành (Maturity Mismatch):** Cấu trúc tài sản quá dài hạn (chiếm tỷ trọng lớn do chu kỳ phát triển của cây cao su) trong khi nguồn tài trợ và nhu cầu thanh toán lại mang tính ngắn hạn cao. Kết quả là, tiền mặt và tài sản ngắn hạn thường không đủ "rộng" để bù đắp thoải mái phần nợ ngắn hạn (Current Ratio và Quick Ratio thấp ở giai đoạn 2022-2024).
+2.  **Sự sụt giảm chất lượng lợi nhuận (Earnings Quality Warning - 2025):** 
+    *   Mặc dù Lợi nhuận sau thuế năm 2025 tăng đột biến (đạt 195,92 tỷ đồng so với mức 78,94 tỷ đồng của 2024), nhưng Net Operating Cash Flow (OCF) lại chuyển từ dương (+168 tỷ) sang âm (-77 tỷ).
+    *   Lợi nhuận đến từ các khoản mục phi tiền mặt/thoái vốn (như thoái vốn DRI, điều chỉnh các khoản) chứ không đến từ dòng tiền hoạt động cốt lõi. Doanh thu thuần năm 2025 giảm (853 tỷ so với 1.186 tỷ năm 2024). Do đó, chất lượng thu nhập trong dài hạn đang bị đe dọa.
+3.  **Vòng quay tiền mặt kéo dài (Cash Cycle Stretch):** 
+    *   Số ngày xử lý hàng tồn kho (DIO) tăng liên tục: Từ 37,35 ngày (2021) lên 75 ngày (2022-2024) và vọt lên mức đỉnh 90,03 ngày vào 2025.
+    *   Dòng tiền bị “kẹt” lại trong tồn kho nhiều hơn, hạn chế lợi thế về thanh khoản ròng, gây tình trạng stress vốn lưu động (Working Capital Stress). Cú sốc "double squeeze" diễn ra vào năm 2025 khi A/R thu hẹp (-73 tỷ) trong khi bắt buộc phải chi trả nhà cung cấp A/P (-75 tỷ).
+4.  **Hành vi CAPEX phòng thủ:** Quản trị doanh nghiệp ngần ngại chi tiền mạnh cho CAPEX do bất ổn định OCF; cố gắng duy trì chi trả lương thay vì tái canh hiệu quả và chỉ tập trung những phần cực thiết yếu.
+
+## III. Tuyên bố Vấn đề (Problem Statement)
+*   **What is happening?**
+    DRG đang phải đối mặt với **structural financing mismatch** (sự thiếu đồng bộ trong cấu trúc tài trợ vốn): Các tài sản trồng trọt dài hạn đang phải dựa vào dòng tiền không ổn định (bị cuốn theo giá cao su) và nguồn vốn ngắn hạn (vay nợ ngắn hạn để tài trợ vốn đầu tư). Điều này làm xói mòn khả năng thanh khoản ngắn hạn và kiềm hãm tốc độ mở rộng dự án.
+*   **Who is affected?**
+    *   Ban lãnh đạo / CFO: Gánh chịu áp lực lớn trong quản lý thanh khoản và giải trình tính hiệu quả trước Hội đồng quản trị (HĐQT) và cổ đông. 
+    *   Ngân hàng / Chủ nợ: Bị rủi ro thanh khoản kéo theo, khiến họ e dè, ngần ngại phê duyệt các hạn mức trung - dài hạn.
+*   **Why does it matter financially?**
+    *   Việc tái tài trợ liên tục các khoản nợ ngắn hạn dẫn đến "Refinancing Risk".
+    *   Gây "Operational Contraction": Thu hẹp hoạt động sản xuất, chậm trễ tái canh hoặc đầu tư nông sản mới (vốn rất tiềm năng) do nghẽn nguồn tiền dài hạn.
+    *   Chi phí vốn (Cost of Capital) duy trì ở mức cao và cản trở tăng trưởng bền vững (growth sustainability).
+
+## IV. Phương hướng Giải quyết Kế tiếp
+Thay vì một gói huy động vốn chung chung cho cả tập đoàn (dễ bị ngân hàng đánh giá xấu dựa vào BCTC tổng quát đang âm dòng tiền HĐKD), giải pháp sẽ là bóc tách thành **từng Deal/Project riêng lẻ (Project-based Finance)**, cung cấp tín hiệu vốn rõ ràng cho các nguồn vốn từ bên ngoài thông qua một hệ sinh thái đóng gói hồ sơ số hóa dựa trên **Fintech (Capital Infrastructure Platform)**.
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 02_CFO_Interview_Transcript.md
+   Kích thước: 5.5 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 02. Biên bản Phỏng vấn CFO DRG (Transcript)
+
+Nội dung trích xuất từ buổi phỏng vấn (Interview Session) với anh **Lê Thanh Bình – Financial Manager** tại Daklak Rubber Joint Stock Company (DRG) nhằm nắm bắt sâu sát bối cảnh thực tại của khối tài chính trong tập đoàn.
+
+## Thông tin Chung
+*   **Nhân vật:** Lê Thanh Bình
+*   **Chức vụ:** Trưởng phòng / Phụ trách Quản trị Tài chính
+*   **Hoàn cảnh:** Doanh nghiệp vừa trải qua giai đoạn cực kỳ khó khăn (2022-2024) do giá cao su giảm sâu và đang tiến hành tái cấu trúc (thoái vốn công ty con DRI, mở rộng diện tích sầu riêng, cà phê tại nông trường Phú Xuân, Cư Bao, Cư M’gar).
+
+---
+## Nội dung Phỏng vấn (Q&A)
+
+### 1. Vai trò và Trách nhiệm hằng ngày
+**Q: Đặc thù công việc quản trị tài chính tại DRG hiện tại là gì?**
+**Mr. Bình (A):** 
+- Căn cứ vào chứng từ kế toán phát sinh để ghi nhận mọi hoạt động phục vụ sản xuất, đầu tư, bám sát các chuẩn mực và khung pháp lý.
+- Lập BCTC phân tích để công bố thông tin cho phía bên ngoài.
+- Rất quan trọng là phải đối chiếu, so sánh giữa thực hiện so với ngân sách kế hoạch (budgeting) để xem năm nay mình làm hiệu quả hay không, và lập kế hoạch mới.
+- Quản lý thanh khoản: Đảm bảo dòng tiền thu chi thông suốt cho sản xuất kinh doanh, đặc biệt ưu tiên trả lương lao động đầy đủ, sau đó là nộp ngân sách nhà nước.
+
+### 2. Sự tham gia vào các quyết định tài chính
+**Q: Những quyết định nào là quan trọng và chiếm thời gian lớn nhất?**
+**Mr. Bình (A):**
+- Quyết định đầu tư vốn chiếm rủi ro cao nhất, vì sai một ly là giảm giá trị tài sản doanh nghiệp nhiều năm.
+- Huy động vốn ngắn hạn vs dài hạn: Rất đau đầu vì trong thời gian dài (2022-2024), ngân hàng từ chối cấp tín dụng dài hạn do thấy doanh nghiệp chênh vênh dòng tiền. Bắt buộc công ty phải dùng vốn ngắn hạn đắp cho đầu tư dài hạn => Gây rủi ro cho tính thanh khoản.
+
+### 3. Ưu tiên xử lý rủi ro & Dòng tiền nhàn rỗi
+**Q: Khi rủi ro lớn ập đến (như 2022-2024 giá mủ giảm), ưu tiên của DRG là gì?**
+**Mr. Bình (A):**
+- Tạm ngưng, cắt giảm các hạng mục đầu tư chưa thực sự cấp thiết để bảo vệ "hơi thở".
+- Siết lại chi phí nông nghiệp, nguyên vật liệu.
+- Ép các đơn vị thu hồi nợ (không để nợ quá hạn, dây dưa).
+
+**Q: Ngược lại khi có dư tiền, ưu tiên đầu tư ở đâu?**
+**Mr. Bình (A):**
+- 1 là lương và phúc lợi nhân công (để giữ chân thợ cạo đi vườn).
+- 2 là tái canh ngay vườn cây quá già cỗi (vượt 20 năm khai thác) và bảo trì trang thiết bị nhà máy vì đó là cốt lõi (Ví dụ năm trước chi 221 tỷ cho tái canh, năm nay 254 tỷ). Dùng nguồn vốn tự có từ khấu hao.
+
+### 4. Áp lực & Nút thắt khi Giải trình HĐQT
+**Q: Điều gì gây áp lực mạnh nhất đối với phòng ban của anh khi trình lên Hội đồng quản trị?**
+**Mr. Bình (A):**
+- Sợ nhất là "Chi phí sản xuất vượt quá tầm kiểm soát so với kế hoạch". Điều này phản ánh sự thiếu hiệu quả trong khâu quản lý nguồn lực.
+- Áp lực kế tiếp là "Mất cân đối tài chính" (Current Ratio nhỏ hơn 1): Dẫn đến không đủ tiền nộp ngân sách, bị cấm xuất hóa đơn/nộp phạt, uy tín sụt giảm làm các ngân hàng quay râu và phong tỏa hạn mức. Phải đến năm 2025 sau khi tái cấu trúc được dư nợ mới dễ thở hơn.
+- Áp lực từ các dự án thất bại trong quá khứ do "chệch lõi", ví dụ mảng khách sạn Dakruco thua lỗ nặng nề, buộc doanh nghiệp phải e dè hơn khi mở rộng sang bất cứ điều gì nếu không có số liệu tách bạch và thẩm định chuyên sâu ngay từ đầu.
+
+### 5. Phương thức Tiếp cận Nguồn vốn (Fintech Awareness)
+**Q: Hiện DRG có đang ứng dụng công nghệ/phần mềm nào trong việc tìm kiếm nguồn vốn không?**
+**Mr. Bình (A):**
+- Chỉ vay vốn thụ động trực tiếp từ tổ chức tín dụng (ngân hàng).
+- Không có bất kỳ nền tảng hay chương trình môi giới nền tảng công nghệ số (Fintech) nào đồng hành. Công ty tự quản lý bằng sức người truyền thống với phần mềm kế toán nội bộ (Pacific).
+
+---
+## Tóm lược Insights (Takeaways)
+*   **Hệ thống ưu tiên:** Sinh tồn (Liquidity Survival) -> Thu nhập công nhân (Core focus) -> Tái canh (CAPEX) -> Nộp thuế (Compliance).
+*   **Tâm lý quản lý (Fears):** Management cực kỳ e ngại rủi ro thanh khoản và sợ lặp lại vết xe đổ khi đầu tư ngoài ngành bị lỗ do thiếu thẩm định. Mọi cấu trúc đầu tư mới (ví dụ Sầu riêng, Solar) đều cần minh bạch từ đầu.
+*   **Thực trạng gọi vốn:** Hoàn toàn thủ công, lạc hậu. Để DRG có thể triển khai những siêu dự án mới, họ không thể đem cục BCTC đang "te tua" đi thuyết phục ngân hàng truyền thống, mà phải có cơ chế bóc nhỏ gói dữ liệu cho từng đối tác.
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 03_User_Persona_&_JTBD.md
+   Kích thước: 5.6 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 03. User Persona & Jobs-To-Be-Done (JTBD)
+
+Phân tích chuyên sâu về chủ thể trọng tâm của mô hình Matcha Capital / DRG, sử dụng khung lý thuyết JTBD (Functional - Social - Emotional) để xác định mục đích cốt lõi đằng sau yêu cầu ứng dụng nền tảng.
+
+---
+
+## I. Mảnh ghép Doanh nghiệp (Enterprise User - The Borrower)
+
+### 1. Chân dung Tổng quan
+Đây không phải là một khách hàng "cá nhân" (retail), người thao tác nền tảng là một nhóm phối hợp (Coordination Team) bao gồm:
+*   **Giám đốc Tài chính (CFO) & Đội ngũ Kế toán**
+*   **Đội ngũ Chiến lược (Strategy Team)** 
+*   **Trưởng dự án (Project Owners)**
+*   **Ban giám đốc (Senior Management)** quyết định giới hạn chia sẻ thông tin (Data compliance).
+
+Đặc điểm hoạt động: Doanh nghiệp này là tập đoàn tư nhân/nhà nước mang tính cách **Bảo thủ, hướng đến Kiểm soát và Sinh tồn (Survival & Control-oriented)**. Ưu tiên hàng đầu của họ là thanh toán các cam kết đúng hạn và giữ chữ tín (Credit Reputation) hơn là tăng trưởng bằng đòn bẩy rủi ro.
+
+### 2. Jobs-to-be-Done (Nhiệm vụ cần giải quyết)
+- **Functional Job (Thực hành):** Khi muốn giải ngân các dự án cấu trúc tài sản khác nhau (Nông nghiệp, Năng lượng, Nhà máy), CFO cần xây dựng hồ sơ huy động vốn (Fundraising profile / Data Room) bóc tách rành mạch dòng tiền của từng dự án để xin hạn mức mà không bị lộ các khoản lỗ hổng quá khứ của mảng khác thuộc sở hữu công ty mẹ.
+- **Social Job (Xã hội/Giao tiếp):** Khi giải trình trước Hội đồng quản trị (HĐQT) và cổ đông dưới áp lực nợ xấu, CFO muốn truy cập vào một công cụ cung cấp Audit Trail rõ ràng chứng minh việc phân bổ dòng vốn cực kỳ hiệu quả, minh bạch và an toàn.
+- **Emotional Job (Cảm xúc):** Khi ngồi đàm phán với Ngân hàng/Quỹ, CFO khao khát có sự tự tin tuyệt đối, cảm thấy mình "nắm đằng chuôi" (Risk Isolation), không bị ngân hàng gây sức ép lây lan rủi ro từ công ty mẹ dẫn đến việc bị ép lãi suất/ép điều khoản vay bất lý.
+
+### 3. Pains (Nỗi đau)
+1. **Dữ liệu phân mảnh, lặp lại (Fragmented manual workflow):** Hồ sơ gọi vốn để rải rác. Đi nộp cho 10 ngân hàng phải chuẩn bị 10 format hòm thủ công (Google Drive / Hardcopy) khác nhau. Khó quản lý Version files.
+2. **Chi phí vốn bị đánh giá sai (Capital Mispricing / Undervaluation):** Bởi vì dự án mới (rất tiềm năng như Sầu Riêng, Điện Mặt Trời) bị gộp vào BCTC chung của công ty mẹ (đang lỗ từ Cao su/Khách sạn), Ngân hàng mặc định đánh fail hoặc siết Room tín dụng kèm lãi suất rất cao.
+3. **Mối nguy rò rỉ dữ liệu nhạy cảm (Confidentiality risk):** Nỗi ám ảnh khi gửi báo cáo mật, sổ cái, hợp đồng cung ứng bản mềm qua Email bị Forward không kiểm soát. Cấm/hạn chế được Download nội dung.
+4. **Vòng lặp thanh khoản (Liquidity Stress):** Mỗi ngày chờ Due Diligence (Thẩm định) của bên Quỹ là một ngày lãi suất ngắn hạn bào mòn dòng tiền của dự án, đẩy doanh nghiệp vào thế bí.
+
+### 4. Gains (Khát vọng đạt được)
+1. **Huy động vốn chuyên biệt (Project-based Finance):** Phân lô dự án cụ thể, match đúng Deal với đúng loại vốn (Green Finance, PE Fund, Debt).
+2. **Tăng tốc thẩm định (Accelerated DD):** Dữ liệu chuẩn, truy xuất nhanh, có Audit Tracking chống giả mạo giúp thời gian chờ giải ngân giảm thiểu mạnh mẽ (Ví dụ: Từ 3 tháng xuống 1 tháng).
+3. **Giữ thế chủ động đàm phán (Risk Isolation for better pricing):** Chốt được lãi suất rẻ nhất vì tách biệt rủi ro thành công, đồng thời giữ quyền sở hữu (Equity) tốt cho cổ đông hiện hữu ban đầu.
+
+---
+
+## II. Mảnh ghép Nhà Đầu tư (The Lender / Investor)
+
+### 1. Chân dung Tổng quan
+Nhóm các tổ chức tài chính hoặc cá nhân có quỹ tiền lớn cần nới lỏng tín dụng (Deploy Capital) để ăn chênh lệch Yield (Lợi tức) hoặc kiểm soát nguồn hàng (Strategic Value):
+*   **Ngân hàng thương mại:** Tìm kiếm dòng tiền ngắn - trung hạn rõ ràng, tài sản bảo đảm cứng. (Debt Financing)
+*   **Quỹ tư nhân (PE / VC), Quỹ xanh:** Tìm kiếm tiềm năng upside dài hạn, equity, hoặc ESG Compliance.
+*   **Strategic Investors (FDI, Đối tác nước ngoài):** Tài trợ chuỗi cung ứng (Supply chain financing / Trade financing).
+
+### 2. Pains (Nỗi đau)
+*   **Chi phí Thẩm định rất đắt đỏ (High Due Diligence Cost):** Thời gian chôn vốn của nhóm Analyst, thuê đơn vị Kiểm toán, Luật mất chi phí cao nhưng hồ sơ khách hàng lại lộn xộn, bị "xào nấu", fake số. ("Time is money").
+*   **Lệch pha khẩu vị rủi ro (Mismatch Appetite):** Mất công sàng lọc quá nhiều Deal dở, đến phút cuối nhận ra không hợp chiến lược của Quỹ gây lãng phí năng lượng.
+
+### 3. Gains (Khát vọng đạt được)
+*   Nhận được một Deal Room chuẩn hóa, minh bạch, dữ liệu được xác thực. Dễ dàng đưa ra quyết định "Go/No-go" trong thời gian siêu tốc. Đảm bảo tỷ lệ sinh lời như kỳ vọng.
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 04_Value_Proposition_Canvas.md
+   Kích thước: 4.7 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 04. Value Proposition Canvas (VPC)
+
+*Bản đồ Giá trị (Value Map) kết nối trực tiếp những Nỗi đau (Pains) và Khát vọng (Gains) của hai nhóm khách hàng cốt lõi được định nghĩa trong JTBD.*
+
+## 1. VPC cho Doanh nghiệp (Capital Seeker: DRG)
+
+### The Problem (Customer Profile)
+CFO đang cố gắng giải quyết một **Jobs-to-be-Done**: Cần đóng gói hồ sơ tài chính riêng biệt cho từng loại dự án để huy động vốn, mà không để lộ các dữ liệu nhạy cảm hoặc báo cáo tài chính tổng hợp (đang có dấu hiệu âm dòng tiền) của cả tập đoàn.
+
+*   **Pains:** Dữ liệu phân mảnh; Tốn thời gian làm hồ sơ thủ công nhưng vẫn bị định giá sai lệch (Mispricing); Căng thẳng rủi ro lộ lọt thông tin nhạy cảm.
+*   **Gains:** Muốn chia sẻ thông tin có kiểm duyệt, muốn tăng tốc độ ra quyết định của hội đồng tín dụng, muốn tách biệt rủi ro để đàm phán lãi suất vay (Debt) hoặc mức độ pha loãng cổ phần (Equity) tốt nhất.
+
+### The Solution (Pain Relievers & Gain Creators)
+Giải pháp là **Project-based Capital Rooms (Phòng gọi vốn theo dự án)** trên nền tảng Matcha Capital.
+
+#### A. Pain Relievers (Thuốc giảm đau)
+1.  **Duy nhất 1 nguồn sự thật (Single Source of Truth):** Quản lý tập trung tài liệu bằng Folder Tree, không còn cảnh gửi đi gọi lại version email sai sót.
+2.  **Khóa chia sẻ bảo mật (Permissioned Access):** Cấp quyền truy cập theo từng Stage (Sơ loại, Thẩm định, Ký kết). Lenders xem gì, tải được hay không đều bị kiểm soát cứng (Watermark / View-only).
+3.  **Audit Trail (Nhật ký truy cập):** Có cơ chế lưu vết lịch sử mọi cú click, mọi lần view tài liệu để dễ dàng truy xuất dấu vết rò rỉ hoặc đánh giá mức độ quan tâm của Lender (Ai đang xem file định giá nhiều nhất?).
+
+#### B. Gain Creators (Yếu tố tạo ra giá trị gia tăng)
+1.  **Kanban Deal Pipeline:** Bảng theo dõi tiến độ từng deal (Tiếp cận -> Thẩm định -> Offer -> Giải ngân), tiết kiệm thời gian tổng hợp báo cáo gửi HĐQT.
+2.  **Indicative Offer Workflow:** Tích hợp tính năng nhận và phản hồi Term Sheet trực tiếp. Loại bỏ hàng tháng trời thương thảo hợp đồng không rõ ràng.
+3.  **Isolation:** Tách bạch câu chuyện rủi ro. Mảng Nhà máy sản xuất có thể được "đóng gói" sạch đẹp đi chào các Quỹ xanh (Green Finance) độc lập hoàn toàn với khoản lỗ từ chuỗi Khách sạn Dakruco do công ty mẹ quản lý.
+
+---
+
+## 2. VPC cho Nhà Đầu tư (The Lender / Investor)
+
+### The Problem (Customer Profile)
+Các Ngân hàng Đầu tư và Quỹ tư nhân liên tục tìm kiếm các mỏ vàng cấu trúc (Deal Sourcing). Châm ngôn của họ là "Time is money". 
+
+*   **Pains:** Chi phí Due Diligence quá đắt; Hồ sơ doanh nghiệp sơ sài, nộp thiếu, dữ liệu mập mờ, mất công người đi rà soát và đối chiếu chứng từ (Information Asymmetry). Lệch pha khẩu vị rủi ro với Project.
+*   **Gains:** Đòi hỏi dữ liệu chuẩn, tin cậy, ra quyết định cực nhanh. Cần một Deal Room có đầy đủ mọi thứ bày sẵn trên mâm.
+
+### The Solution (Pain Relievers & Gain Creators)
+Giải pháp là **Capital Marketplace & Standardized Deal Room (Chợ Vốn & Phòng Thẩm định Chuẩn hóa)**.
+
+#### A. Pain Relievers (Thuốc giảm đau)
+1.  **Chuẩn hóa Data (Standardized Data Room):** Cấu trúc Data Room 04 thư mục (General - Financial - Legal - ESG) được validate trước từ nền tảng. Khi vào xem là đủ ngay hồ sơ, tiết kiệm 50% chi phí Audit và Analyst.
+2.  **Bộ lọc theo khẩu vị (Matching Engine):** Lender có thể lọc nhanh các Deals theo Sector, Expected IRR (Lợi suất dự kiến), NPV, hoặc Loan Size để tránh lãng phí thời gian vào dự án không khớp khẩu vị dải rủi ro.
+
+#### B. Gain Creators (Yếu tố tạo ra giá trị gia tăng)
+1.  **Kiểm chứng Blockchain (Blockchain Integrity):** Tự động băm mã Hash SHA-256 các tài liệu lõi và lưu trên Ledger. Bất cứ hành vi "đánh tráo" hồ sơ tài chính nào đều bị hệ thống phát hiện Mismatch. Lender hoàn toàn tin tưởng 100% vào tệp tin trước mặt họ.
+2.  **Q&A Nội tuyến:** Công cụ trao đổi câu hỏi Q&A trực tiếp ngay trên từng file báo cáo, không còn cảnh phải list hàng chục câu hỏi ra file Excel đi gửi qua lại. Rút ngắn Due Diligence.
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 05_Business_Model_Canvas.md
+   Kích thước: 4.9 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 05. Business Model Canvas (BMC) & Revenue Model
+
+Mô hình kinh doanh của nền tảng B2B Capital Infrastructure Platform (Matcha Capital) với tư duy phát triển làm hai giai đoạn (Pilot - Tập trung vào Doanh nghiệp, và Scale - Mở rộng Chợ giao dịch).
+
+---
+
+## I. Business Model Canvas (Giới thiệu Tổng quan)
+
+### 1. Customer Segments (Phân khúc)
+*   **Borrowers (Tập đoàn cần vốn):** Tập đoàn mẹ đa ngành quy mô lớn (như DRG), hoặc các SME cần vốn để đẩy capex hoặc vốn lưu động.
+*   **Lenders (Người cấp vốn):** Ngân hàng thương mại, Công ty tài chính, Quỹ Đầu tư tư nhân (PE/VC), Nhà đầu tư chiến lược, và các tổ chức tín dụng cấp vốn xanh.
+
+### 2. Value Propositions (Đề xuất Giá trị)
+*   **Đối với Doanh nghiệp:** Hệ thống bóc tách hồ sơ gọi vốn chuyên sâu (Multi-deal); Quản lý truy cập Zero-Trust, Giữ vững quyền lực đàm phán; Tăng tốc tìm thấy nguồn tiền phù hợp.
+*   **Đối với Lender:** Cung cấp sân chơi (Deal Room) chuẩn hóa, giảm mập mờ thông tin (Asymmetry), chi phí Due diligence cực thấp, tích hợp Blockchain Audit Trail đảm bảo hồ sơ không bị thao túng.
+
+### 3. Channels (Kênh phân phối)
+*   Tham gia trực tiếp (Direct Onboarding) cấp tài khoản nội bộ (Giai đoạn Pilot với DRG).
+*   Chợ niêm yết có kiểm soát (Public Marketplace nhưng yêu cầu KYC khắt khe).
+
+### 4. Customer Relationships (Quan hệ khách hàng)
+*   High-touch Account Management cho việc thiết lập cấu trúc Deal phức tạp lúc đầu.
+*   Self-service Workflow Workflow engine (Cơ chế tự động phê duyệt quyền, chấm điểm matching).
+
+### 5. Key Activities (Hoạt động chính)
+*   Vận hành Hạ tầng Data Room (Project-based Capital Rooms) & Quyền truy cập.
+*   Vận hành Blockchain Node để mã băm tài liệu & Lịch sử log (Audit Trail).
+*   Thẩm định AML/KYC/KYB đối tác cấp doanh nghiệp.
+
+### 6. Key Resources (Nguồn lực chính)
+*   Phần mềm lõi (Cloud Platform + Security Layer).
+*   Mạng lưới Smart Contract / Ledger (Công nghệ chuỗi khối).
+*   Relationship Manager (Chuyên gia thấu hiểu cấu trúc tài chính mảng Agri/Năng lượng).
+
+### 7. Key Partners (Đối tác chính)
+*   Các Định chế tín dụng (Banks, Funds).
+*   Nhà cung cấp điện toán đám mây & Dịch vụ eKYC API (Kết nối hệ thống cổng ngân hàng).
+
+---
+
+## II. Cấu trúc Mô hình Doanh thu (Revenue Model)
+
+Nền tảng sử dụng một biểu đồ phí linh hoạt (Multi-layered revenue model). Việc thu lợi nhuận được dựa trên mốc Milestone để tối đa hóa cam kết (Alignment of Incentives).
+
+### Layer 1: Enterprise Setup Fee (Phí thiết lập ban đầu)
+*   **Bên trả phí:** Doanh nghiệp (Borrower - VD: DRG).
+*   **Khi nào thu:** Trả 1 lần (One-off) khi Onboarding tạo không gian công ty.
+*   **Định mức:** Có thể từ 0.5 - 1 triệu (SMEs) tới 3 - 5 triệu (Đại tập đoàn).
+*   **Logic:** Bù lại chi phí Cloud, phân nhóm quyền truy cập. *(Trong giai đoạn Pilot, phí này được Miễn phí/Discount mạnh để thu hút Adoption).*
+
+### Layer 2: Project Room / Upload Fee (Phí hạ tầng Deal Room)
+*   **Bên trả phí:** Doanh nghiệp (Borrower). 
+*   **Khi nào thu:** Thu mỗi khi tạo một Deal Room mới.
+*   **Logic:** Khác với các Data Room truyền thống (như Intralinks) tính phí trên dung lượng 10.000 users hoặc $0.60/page một cách hút máu và khó lường. Ở đây, Matcha Capital thu phí khoán theo tầm vóc Deal. Một Deal Working Capital đơn giản sẽ rẻ hơn một Deal Project Finance 1000 tỷ phức tạp (chia 5-7 cấp Stage).
+*   **Project Insight Fee (Tùy chọn cho Lender):** Nếu Lender muốn xem các dữ liệu VIP nằm sâu hơn trong Stage Thẩm định Dữ Liệu Lõi, họ có thể chia sẻ một phần nhỏ phí Room này với Doanh nghiệp để thể hiện sự "Nghiêm túc cọc".
+
+### Layer 3: Success Fee (Chiết khấu Thành công)
+*   **Bên trả phí:** Doanh nghiệp (Borrower).
+*   **Khi nào thu:** Khi có chữ ký Term Sheet chính thức, hoặc khi Lệnh giải ngân (Disbursement) xuống tiền thật.
+*   **Định mức:** Tỷ lệ \% rất nhỏ (VD: 0.01% - 0.1% / Deal size).
+*   **Logic:** Đây là nguồn thu khổng lồ và chủ chốt giúp Model có thể Scale vĩ đại. Hỗ trợ khách hàng gọi vốn thành công rồi mới thu phí sẽ giúp xóa bỏ toàn bộ Rào cản thâm nhập (Friction).
+
+### Phase Scale Up (Tương lai)
+Giai đoạn sau có thể bổ sung **Premium Analytics** (Dành cho nhà đầu tư cần biểu đồ Dashboard Data), **Subscriptions Fee** hàng năm. Biên lợi nhuận vận hành mục tiêu cho Software Service này là 15-25%.
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 06_Product_Flow_&_Architecture.md
+   Kích thước: 2.8 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 06. Product Flow & Architecture (Matcha Capital)
+
+Đặc tả luồng trải nghiệm tổng quát và kiến trúc vận hành của ứng dụng **Matcha Capital (Capital Infrastructure Platform)**.
+
+## I. Yêu cầu Hệ thống / Mục tiêu Giải pháp
+Platform sinh ra để giải quyết nhu cầu ghép nối dòng chảy Vốn và Nhu cầu huy động qua lớp lưới Thẩm định (Due Diligence). Cấu trúc của nền tảng dựa trên 3 Role (phân quyền) lớn:
+1.  **Internal Role (Borrower / Công ty Cần vốn - VD: DRG)**: Đóng vai trò là Tác giả của Hồ sơ Dự án, làm chủ hệ thống kho lưu trữ Dữ liệu Mật (VDR).
+2.  **Lender Role (Investor / Tổ chức Cấp vốn)**: Đi tìm deal đầu tư hoàn chỉnh, xem hồ sơ, đàm phán tỷ lệ % và Ra quyết định (Termsheet).
+3.  **Admin Role (Matcha System Admin & Blockchain Nodes)**: Quản trị, đối chiếu mã băm tài liệu, điều phối Marketplace và ngăn chặn gian lận hồ sơ.
+
+## II. Sơ đồ Luồng Tổng quát (High-level User Flow)
+
+```mermaid
+graph TD
+    %% INTERNAL FLOW
+    subgraph Internal_Borrower [DOANH NGHIỆP: TẠO DEAL]
+        A(Đăng nhập / Company KYC) --> B{Tạo Mới Deal: Chọn Nhu cầu}
+        B --> |Working Capital/Capex...| C[Project Initiation Wizard 5 Steps]
+        C --> D[Phân quyền Truy cập Secure Data Room]
+        D --> E[Công bố Deal lên Pipeline]
+    end
+
+    %% LENDER FLOW
+    subgraph Lender_Investor [NHÀ ĐẦU TƯ: KHÁM PHÁ & THẨM ĐỊNH]
+        F(KYC/ Bank API Login) --> G[Deal Discovery / Marketplace]
+        G --> H{Lọc theo Khẩu vị}
+        H --> I[Truy cập Deal Room]
+        I --> |Nhấn Gửi Request Data| J(Chờ Phê duyệt Quyền của Borrower)
+        J --> |Được Duyệt| K[Xem Chi tiết File Mật & Báo cáo T.Chính]
+        K --> L(Thương thảo / Submit Term Sheet)
+    end
+
+    %% ADMIN FLOW
+    subgraph Admin_Blockchain [QUẢN TRỊ & BẢO MẬT]
+        M(Monitoring Global) --> N{Audit Trail Checker}
+        N --> |Có Mismatch Code| O(Cảnh báo giả mạo / Alert Lenders)
+        N --> |Trùng khớp| P(Cho phép Deal Trôi chảy)
+        K -. Blockchain Check .-> N
+        E -. Smart Contract Code .-> N
+    end
+
+    E ==> G
+    L -.-> E
+```
+
+## III. Tóm tắt Triển khai Giai đoạn Prototype (17 Screens)
+Trong nội vi Prototype tĩnh, toàn bộ luồng User Flow được thiết kế dựa trên HTML/CSS/JS cục bộ với việc lưu trạng thái `role` (Internal/Lender/Admin) qua `localStorage` tại màn hình Login. Thanh điều hướng dọc (Sidebar) là yếu tố Backbone liên kết 17 Modules chức năng khác nhau vào một Workflow sống động giúp thể hiện đầy đủ Value Proposition trên bản vẽ này.
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 07_Capital_Initiation_&_Distribution.md
+   Kích thước: 3.3 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 07. Sáng kiến Hệ thống Vốn & Data Room (Internal Side)
+
+Đây là tài liệu phân tích luồng Thao tác của Vai trò Borrower (Đại diện: Ban Kế toán / CFO của DRG) trên Matcha Capital. Vai trò này tập trung vào 2 tính năng độc quyền lõi: Wizard Khởi tạo Dự án và Secure Data Room.
+
+## I. Project Initiation Wizard (Luồng khởi tạo dự án)
+Quá trình khởi chạy (Pitching) một Dự án Mới đòi hỏi chuẩn hóa cực độ để khớp với kỳ vọng của Ngân hàng / Lenders. Giao diện được tách nhỏ thành Wizard 5 bước:
+
+1.  **Fund Ask & Type (Khởi tạo Cấu trúc vốn):** Khai báo quy mô và thể loại (Ví dụ: Working Capital 50 tỷ, Capex Nhà máy 150 tỷ, Green Finance...). 
+2.  **Use of Funds (Mục đích Sử dụng):** Phải làm rõ (Có thể đính kèm Hóa đơn/Bảng báo giá từ NCC) số tiền sẽ chạy vào Máy móc bao nhiêu, Lương chuyên gia bao nhiêu... thay vì báo cáo chung chung.
+3.  **Timeline & Cashflow (Lộ trình & Dòng tiền):** Các mốc giải ngân (Disbursement) dự kiến và thời gian sinh dòng tiền thu lại (Ramp-up Time để trả lãi). Đảm bảo Cashflow Forecast nằm theo định dạng chung.
+4.  **Target Investors (Mục tiêu Nhà Đầu Tư):** Borrowers định hình rõ họ muốn mời Sector nào (Ngân hàng, Quỹ Hưu trí, FDI) dựa trên rủi ro của mình.
+5.  **Review & Submit (Xác thực Cuối):** Kiểm tra, nạp lên khối Blockchain. Gán Smart Contract Hash.
+
+## II. Secure Data Room & Deal Distribution (Phòng Dữ Liệu Ảo)
+*Yếu tố quyết định sự tự tin của DRG khi gọi vốn (Pains Relief: Risk Isolation).*
+
+### 1. Phân mảnh Thư mục (Categorized Vaults)
+*   Mọi dự án đều chia theo 4 Folder lõi chuẩn tắc của thị trường Due Diligence (Financial - Legal - General - Operational/ESG). 
+*   Borrower sử dụng hệ thống Tải hàng loạt (Drag & Drop).
+
+### 2. Phân quyền đa Tầng (Multi-tiered Access Permission)
+Nền tảng sử dụng một quy chuẩn Cấp phép "Theo yêu cầu duyệt":
+*   **Tier 1 (Public Synopsis):** Bất cứ Lenders nào vượt rào KYC (qua Bank API) đều nhìn thấy One-pager, Số tiền cần huy động, Lĩnh vực. Chưa nhìn được tên Công ty mẹ (Blind-name).
+*   **Tier 2 (Basic Info):** Khi bấm "Request basic info", nếu được CFO cấp, họ thấy BCTC tổng (Audit) nhưng chưa thấy Chi tiết Thẻ phân bổ ngân sách.
+*   **Tier 3 (Deep Audit VDR):** Cấp quyền cực đoan, thường được CFO cung cấp kèm theo NDA kỹ thuật số. Lender thấy hết dòng tiền trần, invoice nội bộ, lịch sử nộp thuế. Cấm Tải Xuống Trực tiếp, bật cơ chế View-Only ngầm hóa Watermark qua IP tĩnh của Lender đó.
+
+### 3. Distribution & Pipeline Kanban
+Borrower dễ dàng quản trị 15 Deals đang rải rác đàm phán thông qua 1 màn hình kéo thả Kanban (Pipeline Tracker). Tracking chính xác các trạng thái (Draft, Data Gathering, Active Pitching, Term Sheet Issued, Closed).
+
+Hệ thống cung cấp cho CFO cái nhìn tổng quát: "Tuần này Ngân hàng A, B, C đã xem thư mục Pháp lý tới % nào, ở lại bao lâu?", từ đó gọi điện thúc giục đàm phán với vị thế chủ động.
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 08_Lender_Verification_&_Discovery.md
+   Kích thước: 3.3 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 08. Hành trình Thẩm định của Nhà Đầu Tư (Lender Side)
+
+Tài liệu này mô tả kỹ thuật và luồng hành vi (Specs) dành cho vai trò Nhân vật Cấp vốn (Nhà đầu tư quỹ, Analyst, RM Ngân hàng) trên nền tảng Matcha Capital.
+
+## I. Điểm truy cập An toàn (Trust Anchor & Authentication)
+
+Do bản chất các thông tin tài chính luôn mang tính sống còn và dễ bị "Front-running" hoặc Đánh cắp, Matcha Capital **tuyệt đối không cho phép đăng ký công khai (No open public sign-up)**.
+
+### Banking API / KYC-KYB
+*   Mọi Lender muốn tham gia chợ đều phải được xác lập qua một Tổ chức Tài trợ hoặc kết nối thẳng **Banking API Validation**.
+*   **Chứng minh Số dư (Proof of Fund):** Chức năng này kết nối sổ cái, chứng minh quỹ này có quỹ đạo giải ngân tối thiểu để tránh các Entity ném đá dò đường (Spies, Phishing). Chỉ khi Số dư được xác lập (Ví dụ > 200 tỷ VND Khả dụng), Lender mới được Set up vào Sector tương ứng với các Đặc quyền lọc Deal hạng A.
+
+## II. Deal Discovery (Khám phá Thị trường)
+Khi đã vào thành công sảnh (Marketplace), Lender không bị "ngộp" thông tin giống như rải giấy tờ BCTC giấy.
+Hệ thống bố trí dạng Hub-Listing (dạng lưới). Mỗi thẻ Card tương đương 1 Project Vốn.
+
+*   **Bộ lọc Phức hợp (Heuristics Filter):** Lọc theo Số tiền cần, Mục đích giải ngân (Working Capital vs Project Finance), IRR kỳ vọng, Tần suất trả nợ gốc.
+*   **Blind Profile (Chân dung Ẩn danh):** Ở giai đoạn này, doanh nghiệp có thể hiển thị dưới dạng "Một tập đoàn Đầu ngành Vật liệu và Nông nghiệp Cây công nghiệp tại Đăk Lăk, VN" thay vì chỉ đích danh DRG (Điều này nhằm bảo vệ danh tiếng CFO khi rải đơn số lượng lớn).
+
+## III. Deal Room & Execution (Quyết định Thẩm định)
+
+Khi một Lender quan sát kỹ 1 Deal Card và quyết định vào sâu:
+
+1.  **Gửi Yêu Cầu Xem Hồ Sơ (Request View):** Lệnh này trỏ thẳng về hộp thư In-app của Internal Borrower (DRG). 
+2.  **Xem VDR (Virtual Data Room):** Borrower nhận diện thành công vị Lender này là "Đối tác uy tín" -> Bấm Đồng ý. Lúc này, giao diện Lender bung ra toàn bộ Folder Tree (Pháp lý, Thuế, Báo cáo dòng tiền, Khấu hao tài sản...).
+3.  **Tương tác (In-line QA):** Lenders đánh dấu từng ô trong báo PDF, để lại câu hỏi (VD: "Tại sao tồn kho tháng này vọt lên 90 ngày?"). Internal Borrower có một khay Chat Inbox QA trực tiếp trên file, trả lời ngay và đính kèm bằng chứng (Receipt) ngay lập tức.
+4.  **Submit Indicative Term Sheet:** Nếu hài lòng, Lender không cần phải gửi mail nháp word dài ngoằng. Trên nền tảng có Module Form điền: "Tỷ lệ Lãi đề xuất: 9.5%/Năm", "Kỳ ân hạn: 6 tháng", "Điều kiện tiên quyết: Cầm cố 10% cổ phẩn công ty con M"...
+5.  **Click & Sign:** Sau khi 2 bên đàm phán tới lui trên Dashboard, chốt Deal. Chuyển sang Blockchain ghi nhận Hash => Off-board giải ngân theo quy trình nội bộ Ngân hàng thực tế.
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 09_Admin_Security_&_Blockchain.md
+   Kích thước: 3.2 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 09. Bảo mật, Quản trị & Cơ chế Blockchain (Admin Side)
+
+Để Value Proposition của toàn bộ nền tảng (Minh bạch tuyệt đối, Giảm sát phạt Due Diligence) thực sự thành hiện thực, Matcha Capital yêu cầu một kiến trúc bảo mật trung gian mạnh mẽ đóng vai trò là "Kẻ giám sát và Niềm tin" (System Authority & Trust Machine). Đó là Role: **Admin / System Guard**.
+
+## I. Global Dashboard (Trung tâm Điều phối)
+Với Admin quản trị hệ thống, họ có trách nhiệm quan sát toàn bộ sức khỏe nền tảng chứ không được quyền "can thiệp sửa số".
+
+1.  **Giám sát Volume:** Thống kê luồng gọi vốn toàn thị trường diễn ra trên App (Bao nhiêu Deal Active, Bao nhiêu Lenders đang Onboarded, Tổng Demand vốn...).
+2.  **Quản trị Tài khoản (User Governance):** Admin phê duyệt dứt điểm hoặc thu hồi khẩn cấp quyền truy cập của một Lender có biểu hiện bất thường trên Banking API hoặc nghi ngờ Spam Request tới các Borrowers. Chặn đứng đường dây Rò rỉ danh tính công ty.
+
+## II. Cơ chế Blockchain (Toán học trở thành Luật)
+
+Khác biệt cốt lõi nhất của Matcha Capital so với Dropbox hay Google Drive là việc Tích hợp Blockchain làm Lớp xác thực Dữ liệu (Layer 1 Integrity). Lenders không còn lo ngại CFO "Photoshop" chênh lệch số giữa các quý. 
+
+### Cách thức hoạt động của "Audit Trail & Integrity Monitor"
+Khi DRG tải lên hệ thống một file PDF (Ví dụ: `BCTC_Q3_2025.pdf`), hệ thống không nhét thẳng cục File (dung lượng lớn) lên On-chain (vô cùng tốn phí gas do Blockchain nghẽn). Thay vào đó, nó chạy cơ chế sau:
+
+1.  **Thuật toán Băm (Hashing):** Ngay khi File chạm Cloud, hệ thống tính toán (Hash SHA-256) nội dung PDF ra một chuỗi cực độ như `0x9c3f4a...`.
+2.  **Lưu Hash (Immutability):** Chuỗi `0x...` này cộng thêm Thời gian chính xác (Timestamp) + Chữ ký số của Kế toán trưởng được nạp thẳng lên Smart Contract. Nó tồn tại vĩnh viễn và không thể sửa chữa.
+3.  **Check Mismatch liên tục:** 
+    *   Giả sử 3 tháng sau, do làm ăn thua lỗ khoản dự án B, một kế toán vào Server ngầm **ghi đè (override)** 1 trang của file PDF cũ, sửa con số Tồn Kho.
+    *   Hệ thống Blockchain Integrity Monitor định kỳ (Cron jobs) chạy lệnh quết lại Hash tài liệu và đối soát chữ ký ban đầu `0x9c3f4a...`.
+    *   Nhận thấy Mismatch dữ liệu do File mới bị đổi nội dung -> **Cảnh báo Đỏ (Red Alert)** báo thẳng về Admin Dashboard `Mismatch Detected in DRG_Q3.pdf`. Từ đó, Admin hoặc hệ thống cảnh báo auto tới các Lenders đang xem File đó, đánh sập uy tín (Credit Reputation) của Doanh nghiệp.
+
+Nhờ có *Luật răn đe Toán học* này, các CFO (Borrowers) tuyệt đối không lừa đảo được trên File. Lenders thì cực kỳ yên tâm, tiết kiệm cả đống tiền thuê người Audit lại từ đầu. Sự tin tưởng là Nền tảng luân chuyển dòng Vốn (Capital Moving Layer).
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: 10_Course_Guidance_&_Rubrics.md
+   Kích thước: 3.5 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# 10. Tài liệu Hướng dẫn Học thuật (Course Guidance & Rubrics)
+
+Tài liệu này lưu trữ và tổng hợp các Hướng dẫn Đề bài (Rubrics), Yêu cầu Cấu trúc Nhóm (Group Outline), và Khung lý thuyết của Giảng viên dành cho dự án Nhóm 2 - Fintech.
+
+## I. Yêu cầu Cốt lõi của Bài Tập (Core Requirements)
+*Căn cứ từ "Phase 2: STRATEGIC PROPOSAL" và "CORPORATE DIAGNOSIS"*
+
+1. **Phân tích Doanh nghiệp:** Lựa chọn 1 Doanh nghiệp đang niêm yết tại Việt Nam (Phi Tài chính). Đọc BCTC 5 năm. Tìm độ lệch của Cashflow vs Revenue. 
+    *   **Kết quả Nhóm:** Chọn DRG (Daklak Rubber). Nhận diện rủi ro Tài trợ ngắn khoản vay dài (Financial Mismatch).
+2. **Chiến lược Số hóa (Digital Financial Strategy):**
+    *   **Option A (Fintech Strategy):** Hợp tác với nền tảng thứ 3 để tối ưu hệ thống. (Nhóm chọn hướng này qua giải pháp Matcha Capital).
+    *   **Option B (Techfin Strategy):** Tự xây hệ sinh thái nội bộ.
+3. **Mô hình Khách hàng & Giá trị (Value Map):**
+    *   Yêu cầu xây dựng chi tiết Jobs-to-be-Done (Functional, Emotional, Social) cho Persona.
+    *   Xây dựng mô hình VPC: Pain vs Pain Relievers, Gain vs Gain Creators.
+
+## II. Phương pháp Tiếp cận Jobs-to-be-Done (JTBD)
+*(Framework từ Bài giảng Cô giáo được tóm tắt)*
+
+*   **Lý thuyết cốt lõi:** Khách hàng không mua sản phẩm dựa trên Demo/Đặc điểm nhân khẩu học. Họ "Thuê" sản phẩm để giải quyết một "công việc" trong một hoàn cảnh (Context).
+*   **Formula thực hành:** `When I [Situation], I want to [Action], so that I can [Outcome].`
+*   **Bốn động lực (Four Forces) của JTBD:**
+    1.  **Push:** Sự ức chế với phương pháp đang làm (Hồ sơ gửi thủ công sai sót).
+    2.  **Pull:** Điểm thu hút của Sản phẩm mới (Một nền tảng phân quyền VDR cực xịn).
+    3.  **Anxiety:** Sợ hãi sự rủi ro của cái mới (Lộ dữ liệu cho toàn bộ thị trường Lenders). => Phải có Pain Relievers như View-only Access.
+    4.  **Habit:** Thói quen khó bỏ với cái cũ (Kế toán vẫn quen gửi Zalo).
+
+## III. Các Deliverables Cần Báo Cáo Trên Lớp
+Để Finalize thuyết trình, Nhóm 2 cần đi theo cấu trúc Slides tiêu chuẩn sau:
+1.  **Problem / Context:** Câu chuyện khủng hoảng thanh khoản 2025 của DRG.
+2.  **Enterprise Persona:** Profile của Bác Kế toán Trưởng/CFO DRG.
+3.  **Value Proposition Canvas:** Bóc tách 2 Phase cho Borrower và Lender.
+4.  **Revenue Streams / Cost Structure:** Thể hiện rõ logic thu tiền ở Pilot và Scale.
+5.  **Business Model Canvas:** Tức bảng tổng hợp.
+6.  **Prototype Overview:** Nêu cấu trúc Web HTML của luồng gọi vốn và duyệt quỹ.
+7.  **Key Screens:** Demo Prototype qua Figma / Trực tiếp trình duyệt.
+
+## IV. Phân công Nhóm 2 (Member Contributions 100%)
+| No | Student Full Name | Student ID | Contribution |
+| :--- | :--- | :--- | :--- |
+| 1 | Ngô Minh Khuê | 31231020080 | 100% |
+| 2 | Trần Anh Kiệt | 31231021719 | 100% |
+| 3 | Nguyễn Phúc Long | 31231020946 | 100% |
+| 4 | Nguyễn Tri Phong | 31231023091 | 100% |
+| 5 | Đặng Minh Ngọc | 31231020236 | 100% |
+| 6 | Nguyễn Huỳnh Bảo Hà | 31231020516 | 100% |
+| 7 | Đặng Quỳnh Hương | 31231022910 | 100% |
+| 8 | Ngô Thúc Hoàng | 31231025984 | 100% |
+| 9 | Lâm Quốc Vinh | 31211025267 | 100% |
+
+
+
+────────────────────────────────────────────────────────────
+📄 File: audit_requirements.md
+   Kích thước: 3.2 KB | Loại: .md
+────────────────────────────────────────────────────────────
+# Practical Audit Requirements
+*Extracted from Fintech Lecturer Feedback Transcripts*
+
+Based on the thorough critique of the previous failed prototype phase, the following foundational rules have been extracted. These must act as our "North Star" during the final audit of the **Matcha Capital** platform.
+
+## 1. Accurate Problem Identification (The "Core Problem")
+- **Critique:** The team previously misidentified "information asymmetry" as the bank's problem to solve. The reality is that banks lack the desire to process raw operational data. The actual problem was the borrower's lack of stable, long-term revenue streams to justify long-term credit.
+- **Audit Requirement:** Ensure Matcha Capital focuses on solving the *borrower’s* problem—helping them aggregate and summarize their data to prove creditworthiness, rather than forcing the bank into the role of a raw data analyst. 
+
+## 2. Realistic Technology Scope (No "Buzzword Bingo")
+- **Critique:** Pitching "Real-time API Integration into Bank Core Systems" is highly unrealistic. Banks maintain closed systems and do not want live sensor data from farms.
+- **Audit Requirement:** The platform must act as an independent, secure data room and verification hub (e.g., Blockchain document anchoring). Do not claim direct database integration with banks unless it's a standard Open Banking read-only API (like Plaid for proof-of-funds).
+
+## 3. Focus on a Single "Basic Proposition"
+- **Critique:** "Làm nhiều nhưng làm tùm lum tà la" (Doing too much, but haphazardly). The lecturer pointed out that combining too many tech buzzwords (AI, API, Blockchain, Real-time DB) dilutes the solution.
+- **Audit Requirement:** Matcha Capital must champion *one* clear workflow: **Streamlining Capital Raising (Deal Preparation -> Data Room -> Lender Matching -> Term Sheet).** Remove any lingering complex, unnecessary features that don’t serve this core pipeline.
+
+## 4. Practical Financial Engineering
+- **Critique:** Instead of relying purely on tech to "unlock liquidity," use real financial mechanisms. The lecturer suggested that if the problem is unstable commodity prices, use derivatives or smart-contract-based off-take agreements to lock in prices. 
+- **Audit Requirement:** Matcha Capital correctly categorizes projects into "Green Finance," "Capex," and "Trade Finance." Ensure the platform reflects matching lenders based on these specific, viable financial structures.
+
+## 5. Clear, Honest Terminology
+- **Critique:** Avoid over-promising phrases like "phá vỡ cấu trúc dữ liệu minh bạch" (breaking transparent data structures) or "cởi trói thanh khoản" (unchaining liquidity) without explaining *how*.
+- **Audit Requirement:** Review the platform UI to ensure all copywriting is professional, objective, and realistic. Use terms like "Blockchain Verified Document" rather than "Immutable Real-Time Operations."
+
+---
+**Conclusion for Matcha Capital:**
+The current 17-screen prototype largely avoids the pitfalls of the previous failure by positioning itself as a secure **VDR (Virtual Data Room)** and **Marketplace** rather than a core banking integration. The final audit must simply verify that the narrative remains tightly focused on Deal Structuring and Document Integrity.
+
+
