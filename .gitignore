@@ -6,6 +6,7 @@
 !README.md
 !.gitignore
 !vercel.json
+!vercel.json
 
 # Also ignore system/temp files inside prototype if any
 prototype/.DS_Store
