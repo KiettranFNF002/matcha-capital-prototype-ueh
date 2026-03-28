@@ -63,21 +63,23 @@
     // ── Term Sheet Blockchain Submit Animation ───────────────────────────────
     function runSubmitAnimation() {
         const overlay = document.getElementById('submit-overlay');
+        // Fix: set display AND opacity so it's actually visible
         overlay.style.display = 'flex';
+        overlay.style.opacity = '1';
 
         const bar    = document.getElementById('submit-bar');
         const status = document.getElementById('submit-status');
 
         const phases = [
-            { delay: 0,    bar: 25, text: 'ENCRYPTING TERM SHEET...', step: 's-step1' },
-            { delay: 900,  bar: 55, text: 'GENERATING PAYLOAD...',    step: 's-step2' },
-            { delay: 1800, bar: 80, text: 'ANCHORING TO LEDGER...',   step: 's-step3' },
-            { delay: 2700, bar: 100, text: 'BLOCK CONFIRMED',         step: 's-step4' },
+            { delay: 0,    pct: 25,  text: 'ENCRYPTING TERM SHEET...', step: 's-step1' },
+            { delay: 900,  pct: 55,  text: 'GENERATING PAYLOAD...',    step: 's-step2' },
+            { delay: 1800, pct: 80,  text: 'ANCHORING TO LEDGER...',   step: 's-step3' },
+            { delay: 2700, pct: 100, text: 'BLOCK CONFIRMED',          step: 's-step4' },
         ];
 
-        phases.forEach(({ delay, bar: w, text, step }) => {
+        phases.forEach(({ delay, pct, text, step }) => {
             setTimeout(() => {
-                bar.style.width = w + '%';
+                bar.style.width = pct + '%';
                 status.innerText = text;
                 const el = document.getElementById(step);
                 if (el) el.classList.remove('hidden');
@@ -95,11 +97,19 @@
         }, 3500);
     }
 
-    // Wire up the submit button
-    document.addEventListener('DOMContentLoaded', () => {
+    // Fix: wire button directly after DOM is ready — use both DOMContentLoaded
+    // and a fallback timeout to handle cases where event already fired.
+    function wireButton() {
         const btn = document.querySelector('[data-i18n="offer_btn_submit"]');
-        if (btn) btn.addEventListener('click', runSubmitAnimation);
-    });
+        if (btn) {
+            btn.onclick = runSubmitAnimation;
+        }
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', wireButton);
+    } else {
+        wireButton(); // DOM already ready
+    }
     // ────────────────────────────────────────────────────────────────────────
 </script>
 </body>
