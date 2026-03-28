@@ -6,46 +6,51 @@
 </aside> <!-- Main Content --> <main class="main-content"> <header class="mb-8 p-4 bg-green-50 border border-green-200 rounded-lg flex justify-between items-center"> <div class="flex items-center gap-3"> <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center text-white font-bold">H</div> <p class="text-green-800 text-sm font-semibold"> Logged in: <strong>HSBC Vietnam</strong></p> </div> </header> <div class="mb-8"> <div class="flex items-center gap-2 text-slate-400 text-sm mb-2"> <span>Rooms</span> <span>›</span> <span>Working Capital Latex Q1 2026</span> </div> <h1 class="text-3xl font-bold" data-i18n="offer_title">Submit Indicative Offer</h1> <p class="text-slate-500" data-i18n="offer_subtitle">Provide non-binding financing terms based on your preliminary review.</p> </div> <div class="grid grid-cols-1 lg:grid-cols-2 gap-8"> <!-- Submission Form --> <div class="card space-y-6"> <h2 class="text-xl font-bold border-b pb-4" data-i18n="offer_section_terms">Term Sheet Details</h2> <div class="grid grid-cols-2 gap-4"> <div class="space-y-1"> <label class="text-xs font-bold text-slate-500 uppercase" data-i18n="offer_label_amount">Amount Offered (<u>đ</u>)</label> <input type="text" class="w-full p-3 border rounded-lg bg-slate-50 font-bold" placeholder="e.g. 10.000.000.000"> </div> <div class="space-y-1"> <label class="text-xs font-bold text-slate-500 uppercase" data-i18n="offer_label_rate">Interest Rate (% p.a.)</label> <input type="text" class="w-full p-3 border rounded-lg bg-slate-50 font-bold" placeholder="e.g. 8.5"> </div> </div> <div class="space-y-1"> <label class="text-xs font-bold text-slate-500 uppercase" data-i18n="offer_label_tenor">Tenor / Duration (Months)</label> <input type="text" class="w-full p-3 border rounded-lg bg-slate-50 font-bold" placeholder="e.g. 12 months"> </div> <div class="space-y-1"> <label class="text-xs font-bold text-slate-500 uppercase" data-i18n="offer_label_collateral">Collateral / Security Requirements</label> <textarea class="w-full p-3 border rounded-lg bg-slate-50 min-h-[100px]" placeholder="Specific assets, receivables, or corporate guarantee..."></textarea> </div> <div class="space-y-1"> <label class="text-xs font-bold text-slate-500 uppercase" data-i18n="offer_label_conditions">Special Conditions / Covenants</label> <textarea class="w-full p-3 border rounded-lg bg-slate-50 min-h-[100px]" placeholder="Financial ratios, documentation requirements..."></textarea> </div> <div class="flex gap-3 pt-4"> <button class="btn btn-primary px-8" data-i18n="offer_btn_submit">Submit Indicative Offer</button> <button class="btn btn-secondary px-8" data-i18n="btn_save">Save Draft</button> </div> </div> <!-- Reference Section (Admin Comparison) --> <div class="space-y-6"> <div class="card bg-slate-50 border-blue-200"> <h3 class="font-bold text-blue-900 mb-4">Other Active Offers (DRG Admin Only)</h3> <div class="space-y-3"> <div class="p-3 bg-white border rounded flex justify-between items-center"> <div> <p class="font-bold text-sm">Vietcombank</p> <p class="text-xs text-slate-500">12 Billion <u>đ</u> @ 8.2% | 12M</p> </div> <span class="badge status-active">Submitted</span> </div> <div class="p-3 bg-white border rounded flex justify-between items-center"> <div> <p class="font-bold text-sm">BIDV</p> <p class="text-xs text-slate-500">10 Billion <u>đ</u> @ 8.5% | 18M</p> </div> <span class="badge status-pending">Draft</span> </div> </div> <p class="text-[10px] text-slate-400 mt-4 italic" data-i18n="offer_admin_note">Note: Only DRG Internal admins can see competing offers in the live dashboard.</p> </div> <div class="card"> <h3 class="font-bold text-sm mb-4 uppercase text-slate-400">Next Steps</h3> <ol class="text-xs space-y-3 text-slate-600 list-decimal pl-4"> <li>DRG Finance team reviews your indicative terms.</li> <li>Request for formal credit approval / due diligence.</li> <li>Final binding Term Sheet issuance.</li> <li>Loan documentation and facility opening.</li> </ol> </div> </div> </div> <!-- Map: Final Lender flow - Submit indicative terms. Placeholder: form fields, offer data --> </main>
 
 <!-- Blockchain Submit Overlay -->
-<div id="submit-overlay" class="fixed inset-0 z-[200] bg-[#0a2e2f]/97 flex-col items-center justify-center text-white hidden" style="display:none;">
-    <div class="flex flex-col items-center gap-6 px-8 text-center max-w-md">
+<div id="submit-overlay" class="fixed inset-0 z-[500] bg-slate-950/98 backdrop-blur-md flex flex-col items-center justify-center text-white transition-all duration-500" style="display:none; opacity:0;">
+    <div class="flex flex-col items-center gap-6 px-8 text-center max-w-md animate-in fade-in zoom-in duration-500">
         <!-- Icon -->
-        <div class="relative mb-2">
+        <div class="relative mb-4">
             <div id="submit-ping" class="absolute inset-0 bg-emerald-500/20 rounded-full animate-ping scale-150"></div>
-            <div class="relative w-24 h-24 bg-emerald-500 rounded-full flex items-center justify-center shadow-2xl shadow-emerald-500/40">
-                <svg id="submit-icon-lock" class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="relative w-28 h-28 bg-emerald-600 rounded-full flex items-center justify-center shadow-[0_0_50px_rgba(16,185,129,0.3)]">
+                <svg id="submit-icon-lock" class="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                 </svg>
-                <svg id="submit-icon-check" class="w-12 h-12 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg id="submit-icon-check" class="w-14 h-14 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
             </div>
         </div>
 
         <!-- Status Text -->
-        <h2 id="submit-status" class="text-xl font-black uppercase tracking-[0.3em] text-emerald-400">ENCRYPTING TERM SHEET...</h2>
+        <div class="space-y-2">
+            <h2 id="submit-status" class="text-2xl font-black uppercase tracking-[0.4em] text-emerald-400">ENCRYPTING TERM SHEET...</h2>
+            <p class="text-[10px] text-slate-500 uppercase tracking-widest font-mono">Secured by Matcha Blockchain Engine</p>
+        </div>
 
         <!-- Progress Bar -->
-        <div class="w-72 h-1.5 bg-white/10 rounded-full overflow-hidden">
-            <div id="submit-bar" class="w-0 h-full bg-emerald-400 transition-all duration-500 rounded-full"></div>
+        <div class="w-80 h-1.5 bg-white/5 rounded-full overflow-hidden border border-white/5">
+            <div id="submit-bar" class="w-0 h-full bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,0.5)] transition-all duration-700 rounded-full"></div>
         </div>
 
         <!-- Steps Log -->
-        <div class="font-mono text-[10px] text-left space-y-1 opacity-50 w-full">
-            <p id="s-step1">▶ Hashing offer fields via SHA-256...</p>
-            <p id="s-step2" class="hidden">▶ Generating transaction payload [0xe4f2...a7c1]</p>
-            <p id="s-step3" class="hidden">▶ Broadcasting to Blockchain Ledger...</p>
-            <p id="s-step4" class="hidden text-emerald-400 opacity-100 font-bold">✔ Block #4819 confirmed. Offer anchored.</p>
+        <div class="font-mono text-[11px] text-left space-y-2 opacity-60 w-full max-w-sm bg-black/20 p-4 rounded-xl border border-white/5">
+            <p id="s-step1" class="flex items-center gap-2"> <span class="text-emerald-500">▶</span> Hashing offer fields via SHA-256...</p>
+            <p id="s-step2" class="hidden flex items-center gap-2"> <span class="text-emerald-500">▶</span> Generating transaction payload [0xe4f2...a7c1]</p>
+            <p id="s-step3" class="hidden flex items-center gap-2"> <span class="text-emerald-500">▶</span> Broadcasting to Blockchain Ledger...</p>
+            <p id="s-step4" class="hidden text-emerald-400 opacity-100 font-bold flex items-center gap-2"> <span class="text-emerald-400">✔</span> Block #4819 confirmed. Offer anchored.</p>
         </div>
 
         <!-- Final success message -->
-        <div id="submit-success" class="hidden text-center mt-2">
-            <p class="text-2xl font-black text-emerald-300 mb-1">OFFER SUBMITTED</p>
-            <p class="text-sm text-white/60">Your Indicative Term Sheet has been anchored to the Blockchain Ledger. DRG has been notified.</p>
-            <p class="font-mono text-[10px] text-emerald-400/70 mt-3">TxID: 0xe4f2b3c1...a7c1d9e8</p>
+        <div id="submit-success" class="hidden text-center mt-4">
+            <p class="text-3xl font-black text-emerald-400 mb-2">OFFER ANCHORED</p>
+            <p class="text-sm text-slate-300 leading-relaxed">Your Indicative Term Sheet has been permanently linked to the Blockchain Ledger. DRG Admin has been notified for review.</p>
+            <div class="inline-block mt-4 px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 rounded text-[10px] font-mono text-emerald-400">
+                TxID: 0xe4f2b3c1...a7c1d9e8
+            </div>
         </div>
 
         <!-- Close button (appears after success) -->
-        <button id="submit-close" onclick="document.getElementById('submit-overlay').style.display='none'" class="hidden mt-4 px-8 py-3 bg-emerald-500 hover:bg-emerald-400 text-white font-bold rounded-xl uppercase tracking-widest text-xs transition-all">
+        <button id="submit-close" onclick="window.location.href='deal-room.html'" class="hidden mt-8 px-10 py-4 bg-emerald-600 hover:bg-emerald-500 text-white font-bold rounded-2xl uppercase tracking-widest text-xs transition-all shadow-xl shadow-emerald-900/20 border border-emerald-400/20">
             ← Back to Deal Room
         </button>
     </div>
