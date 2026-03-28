@@ -60,10 +60,9 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-8"> 
             <!-- Document Explorer --> 
             <div class="lg:col-span-3 relative"> 
-                <!-- Watermark overlay --> 
-                <div class="absolute inset-0 pointer-events-none z-10 overflow-hidden rounded-2xl"> 
-                    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-25deg);font-size:60px;font-weight:900;color:rgba(13,115,119,0.06);white-space:nowrap;user-select:none;">CONFIDENTIAL · VIEW ONLY</div> 
-                </div> 
+                <!-- Dynamic Watermark overlay --> 
+                <div id="dynamic-watermark" class="absolute inset-0 pointer-events-none z-10 overflow-hidden rounded-2xl" style="user-select:none;"></div>
+
                 <div class="card p-0 overflow-hidden"> 
                     <div class="bg-slate-50 p-4 border-b grid grid-cols-4 text-xs font-bold text-slate-400 uppercase tracking-widest"> 
                         <span class="col-span-2">Document Name</span> 
@@ -121,10 +120,58 @@
                             <p class="text-xs font-bold">V2.1 Review</p> 
                             <p class="text-[10px]">Adjusted solar yield estimates.</p> </div> <div class="pl-4 border-l-2 border-transparent py-1 text-slate-400"> <p class="text-xs font-bold">V1.0 Draft</p> <p class="text-[10px]">Initial room opening.</p> </div> </div> </div> <div class="card bg-slate-100/50 border-slate-200 p-6"> <h3 class="font-bold text-[#0a2e2f] mb-2">Need More Access?</h3> <p class="text-xs text-blue-600 mb-4">Request full visibility into the business plan and cash flow forecast details from DRG Admin.</p> <div class="space-y-2"> <button onclick="window.location.href='pricing.html'" class="w-full bg-[#0a2e2f] text-white py-3 rounded-xl font-bold hover:bg-black transition-all text-xs uppercase tracking-widest">Request Full Access</button> <button class="w-full bg-white text-slate-700 py-3 rounded-xl border border-slate-200 font-bold hover:bg-slate-50 transition-all text-xs uppercase tracking-widest">Ask a Question / Q&A</button> </div> </div> <div class="card bg-slate-900 text-white border-none p-4"> <p class="text-[10px] uppercase font-bold text-teal-400 tracking-widest mb-2">Immutable Hash</p> <p class="text-[9px] font-mono break-all opacity-70">0x8f3c7...d9e1a2f4b5c6</p> <hr class="my-3 border-white/10"> <p class="text-[10px] italic">Any document modification generates a new block on the chain.</p> </div> </div> </div> </main> 
 
-    <script> 
-        localStorage.setItem('drg-role', 'lender'); 
-        const role = 'lender'; 
+    <script>
+        localStorage.setItem('drg-role', 'lender');
+        const role = 'lender';
         document.getElementById('prototype-body').className = 'role-' + role;
+
+        // ── Dynamic Watermark Generator ──────────────────────────────────────
+        const LENDER_INFO = {
+            name:  'HSBC Vietnam — Nguyen Phuong Anh',
+            email: 'phuonganh@hsbc.com.vn',
+            ip:    '203.162.4.191',
+        };
+
+        function buildWatermark() {
+            const container = document.getElementById('dynamic-watermark');
+            if (!container) return;
+
+            const now = new Date();
+            const ts  = now.toISOString().slice(0, 19).replace('T', ' ') + ' UTC+7';
+
+            // One watermark stamp (two lines)
+            const line1 = `${LENDER_INFO.name}  ·  ${LENDER_INFO.email}`;
+            const line2 = `IP: ${LENDER_INFO.ip}  ·  Accessed: ${ts}`;
+
+            // How many stamps we need to fill the area
+            const cols = 3, rows = 7;
+            let html = '';
+            for (let r = 0; r < rows; r++) {
+                for (let c = 0; c < cols; c++) {
+                    const top  = (r / rows * 100) + '%';
+                    const left = (c / cols * 100) + '%';
+                    html += `
+                    <div style="
+                        position: absolute;
+                        top: ${top}; left: ${left};
+                        transform: rotate(-28deg) translate(-10%, -10%);
+                        white-space: nowrap;
+                        line-height: 1.6;
+                        pointer-events: none;
+                    ">
+                        <div style="font-size:11px;font-weight:700;color:rgba(13,115,119,0.13);letter-spacing:.04em;">${line1}</div>
+                        <div style="font-size:10px;font-weight:600;color:rgba(13,115,119,0.10);letter-spacing:.03em;">${line2}</div>
+                    </div>`;
+                }
+            }
+            container.innerHTML = html;
+        }
+
+        // Build once, refresh timestamp every 60 s so it stays "live"
+        buildWatermark();
+        setInterval(buildWatermark, 60000);
+        // ────────────────────────────────────────────────────────────────────
+
 
         // Integrity Animation Logic
         const steps = [
